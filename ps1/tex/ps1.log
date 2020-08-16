@@ -1,0 +1,27 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdftex 2020.8.4)  7 AUG 2020 18:24
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**ps1.tex
+(./ps1.tex
+! I can't find file `{macros.tex}'.
+l.11 \input{macros.tex}
+                       
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: 
+! I can't find file `{macros.tex}'.
+l.11 \input{macros.tex}
+                       
+(Press Enter to retry, or Control-D to exit)
+Please type another input file name: macros.tex
+(./macros.tex
+! Undefined control sequence.
+l.2 \documentclass
+                  {article}
+? 
+! Emergency stop.
+l.2 \documentclass
+                  {article}
+End of file on the terminal!
+
+!  ==> Fatal error occurred, no output PDF file produced!

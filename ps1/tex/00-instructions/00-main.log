@@ -1,0 +1,48 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.8.4)  7 AUG 2020 18:17
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**00-main.tex
+(./00-main.tex
+LaTeX2e <2020-02-02> patch level 2
+L3 programming layer <2020-02-14>
+
+! LaTeX Error: File `00-instructions/01-general.tex' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: tex)
+
+Enter file name: 
+
+! LaTeX Error: File `00-instructions/02-submission.tex' not found.
+
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: tex)
+
+Enter file name: 
+)
+*
+(Please type a command or say `\end')
+*
+(Please type a command or say `\end')
+*\end
+
+*\end
+! TeX capacity exceeded, sorry [input stack size=5000].
+<to be read again> 
+                   \expandafter 
+<*> \end
+        
+If you really absolutely need more capacity,
+you can ask a wizard to enlarge me.
+
+ 
+Here is how much of TeX's memory you used:
+ 21 strings out of 483107
+ 483 string characters out of 5964631
+ 231847 words of memory out of 5000000
+ 15144 multiletter control sequences out of 15000+600000
+ 532338 words of font info for 24 fonts, out of 8000000 for 9000
+ 59 hyphenation exceptions out of 8191
+ 5000i,0n,4996p,81b,10s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!
