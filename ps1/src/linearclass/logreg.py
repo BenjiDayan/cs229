@@ -1,5 +1,6 @@
 import numpy as np
-import linearclass.util
+from linearclass import util
+import time
 
 
 def main(train_path, valid_path, save_path):
@@ -14,12 +15,42 @@ def main(train_path, valid_path, save_path):
 
     # *** START CODE HERE ***
     # Train a logistic regression classifier
-
+    LogRegger = LogisticRegression()
+    LogRegger.fit(x_train, y_train)
 
     # Plot decision boundary on top of validation set set
     # Use np.savetxt to save predictions on eval set to save_path
     # *** END CODE HERE ***
 
+def J(theta, x, y):
+    """avg empirical loss over x and y - i.e -1/n sum log likelihood
+
+    Args:
+        x: Training example inputs. Shape (n_examples, dim).
+        y: Training example labels. Shape (n_examples,).
+    """
+
+    return (-1/y.shape[0]) * (
+        y @ np.log(g(x @ theta)) +
+        (1-y) @ np.log(1 - g(x @ theta))
+    )
+
+def grad_J(theta, x, y):
+    """gradient of avg empirical loss over x and y - i.e -1/n sum log likelihood
+
+    Args:
+        x: Training example inputs. Shape (n_examples, dim).
+        y: Training example labels. Shape (n_examples,).
+    """
+    return (-1/y.shape[0]) * (
+        np.multiply(y , 1 - g(x @ theta)) @  x +
+        np.multiply(1 - y ,g(x @ theta)) @ x
+    )
+
+def g(z):
+    eps = 1e-7
+    return np.minimum(np.maximum(1 / (1 + np.exp(-z)), eps), 1-eps)
+    #return 1 / (1 + np.exp(-z))
 
 class LogisticRegression:
     """Logistic regression with Newton's Method as the solver.
@@ -53,21 +84,25 @@ class LogisticRegression:
             y: Training example labels. Shape (n_examples,).
         """
         # *** START CODE HERE ***
+        if self.theta is None:
+            self.theta = np.zeros(x.shape[-1])
+        for step_i in range(self.max_iter):
+            grad = grad_J(self.theta, x, y)
+            loss = J(self.theta, x, y)
+            print(f'step: {step_i}, loss: {loss}, theta: {self.theta}')
+            # print(f'delta: {self.step_size * grad}')
+            old_theta = self.theta.copy()
+            self.theta -= self.step_size * grad
+            # print(old_theta)
+            # print(self.theta)
+            # print(np.sum(np.abs(self.theta - old_theta)))
+            # print(np.sum(np.abs(self.theta - old_theta)) < self.eps)
+            if np.sum(np.abs(self.theta - old_theta)) < self.eps:
+                break
+
+            time.sleep(0.)
         # *** END CODE HERE ***
 
-    @staticmethod
-    def J(theta, x, y):
-        """avg empirical loss over x and y - i.e -1/n sum log likelihood
-
-        Args:
-            x: Training example inputs. Shape (n_examples, dim).
-            y: Training example labels. Shape (n_examples,).
-        """
-
-        return (-1/y.shape[-1]) * (
-            np.dot(y, np.dot(x, theta)) +
-            np.dot(1-y, 1 - np.dot(x, theta))
-        )
 
     def predict(self, x):
         """Return predicted probabilities given new inputs x.
@@ -82,10 +117,11 @@ class LogisticRegression:
         # *** END CODE HERE ***
 
 if __name__ == '__main__':
+    print('hi!')
     main(train_path='ds1_train.csv',
          valid_path='ds1_valid.csv',
          save_path='logreg_pred_1.txt')
-
-    main(train_path='ds2_train.csv',
-         valid_path='ds2_valid.csv',
-         save_path='logreg_pred_2.txt')
+#
+#     main(train_path='ds2_train.csv',
+#          valid_path='ds2_valid.csv',
+#          save_path='logreg_pred_2.txt')
