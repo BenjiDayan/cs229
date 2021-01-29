@@ -1,0 +1,27 @@
+
+\begin{answer}
+	\begin{equation*}
+	J(\theta)
+	= -\frac{1}{\nexp} \sum_{i=1}^\nexp \left(y^{(i)}\log(h_{\theta}(x^{(i)}))
+	+  (1 - y^{(i)})\log(1 - h_{\theta}(x^{(i)}))\right),
+	\end{equation*}
+	So then
+	\begin{align*}
+	\nabla J(\theta)
+	&= -\frac{1}{n} \sum_{i=1}^n \left(y^{(i)}\frac{1}{h_{\theta}(x^{(i)})} h(1-h) x^{(i)}
+	-  (1 - y^{(i)})\frac{1}{1 - h_{\theta}(x^{(i)})} h(1-h) x^{(i)}\right) \\	
+	&= -\frac{1}{n} \sum_{i=1}^n \left(x^{(i)} \left[ (1-h) y^{(i)} - (1 - y^{(i)} ) h \right]\right)\\
+	&= -\frac{1}{n} \sum_{i=1}^n \left(x^{(i)} \left[ (1-h) y^{(i)} - (1 - y^{(i)} ) h \right]\right)\\
+	&= -\frac{1}{n} \sum_{i=1}^n \left(x^{(i)} \left[ y^{(i)} - h \right]\right)\\
+	\end{align*}
+	And then
+	\begin{align*}
+	\nabla \nabla J(\theta)
+	&= -\frac{1}{n} \sum_{i=1}^n \left( -xx^T h (1-h) \right) = H
+	\end{align*}
+	So
+	\begin{align*}
+	z^T H z = \frac{1}{n} \sum_{i=1}^n \left(z x^{(i)} (x^{(i)})^T z^T h_\theta(x^{(i)}) (1 - h_\theta(x^{(i)})) \right) \geq 0
+	\end{align*}
+	as $h, (1-h) \in (0, 1)$
+\end{answer}

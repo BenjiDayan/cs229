@@ -87,12 +87,11 @@ class LogisticRegression:
         if self.theta is None:
             self.theta = np.zeros(x.shape[-1])
         for step_i in range(self.max_iter):
-            grad = grad_J(self.theta, x, y)
-            loss = J(self.theta, x, y)
+            new_theta, loss, grad = self.newton_step(x, y)
             print(f'step: {step_i}, loss: {loss}, theta: {self.theta}')
             # print(f'delta: {self.step_size * grad}')
             old_theta = self.theta.copy()
-            self.theta -= self.step_size * grad
+            self.theta = new_theta
             # print(old_theta)
             # print(self.theta)
             # print(np.sum(np.abs(self.theta - old_theta)))
@@ -102,6 +101,22 @@ class LogisticRegression:
 
             time.sleep(0.)
         # *** END CODE HERE ***
+    def step_n(self, n, x, y):
+        if self.theta is None:
+            self.theta = np.zeros(x.shape[-1])
+        for step_i in range(n):
+            new_theta, loss, grad = self.newton_step(x, y)
+            print(f'step: {step_i}, loss: {loss}, theta: {self.theta}')
+            # print(f'delta: {self.step_size * grad}')
+            old_theta = self.theta.copy()
+            self.theta = new_theta
+
+
+    def newton_step(self, x, y):
+        grad = grad_J(self.theta, x, y)
+        loss = J(self.theta, x, y)
+        new_theta = self.theta - loss / grad
+        return new_theta, loss, grad
 
 
     def predict(self, x):
@@ -125,3 +140,9 @@ if __name__ == '__main__':
 #     main(train_path='ds2_train.csv',
 #          valid_path='ds2_valid.csv',
 #          save_path='logreg_pred_2.txt')
+
+from linearclass import util
+train_path = 'ds1_train.csv'
+x_train, y_train = util.load_dataset('ps1/src/linearclass/' + train_path, add_intercept=True)
+from linearclass.logreg import *
+LogRegger = LogisticRegression()
