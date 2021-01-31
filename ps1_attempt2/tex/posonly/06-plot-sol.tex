@@ -1,2 +1,10 @@
+%\input{../macros.tex}
+%\begin{document}
 \begin{answer}
+We derive our estimate for $\alpha$ as suggested, then compute the using $\tilde{h}(x) = h(x)/\alpha$ we derive the new decision boundary corresponding to $\tilde{h}(x) = \frac{1}{2}$ by $h(x)=\frac{\alpha}{2} = \frac{1}{1 + e^{-\theta^T x}}$, i.e. $\theta^T x = \log(\frac{\alpha}{2 - \alpha})$. This means we can introduce $\tilde{\theta}$ where $\tilde{\theta}_0 = \theta_0 - \log(\frac{\alpha}{2 - \alpha})$ to provide a decision boundary again with our old formula $\tilde{\theta}^T x = 0$.
+
+\begin{figure}[H]
+\includegraphics{C:/Users/benja/coding/cs229/ps1_attempt2/src/posonly/outputs/posonly_adjusted_pred_fig.png}
+\end{figure}
 \end{answer}
+%\end{document}

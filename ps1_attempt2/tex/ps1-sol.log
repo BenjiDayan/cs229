@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.4.6)  29 JAN 2021 14:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.4.6)  31 JAN 2021 18:17
 entering extended mode
 **\def\solutions{1} \input{ps1}
  (ps1.tex (macros.tex
@@ -900,74 +900,131 @@ Overfull \hbox (16.34895pt too wide) in paragraph at lines 12--13
 ) [10 <C:/Users/benja/coding/cs229/ps1_attempt2/src/linearclass/outputs/gda_pre
 d1_logx2_fig.png>]) [11 <C:/Users/benja/coding/cs229/ps1_attempt2/src/linearcla
 ss/outputs/gda_pred_1_logtrans_fig.png>] (posonly/00-main.tex
-(posonly/01-train-t-labels.tex) (posonly/01-train-t-labels-sol.tex)
-(posonly/02-train-y-labels.tex [12
+(posonly/01-train-t-labels.tex) (posonly/01-train-t-labels-sol.tex
+<C:/Users/benja/coding/cs229/ps1_attempt2/src/posonly/outputs/posonly_true_pred
+_fig.png, id=72, 462.528pt x 346.896pt>
+File: C:/Users/benja/coding/cs229/ps1_attempt2/src/posonly/outputs/posonly_true
+_pred_fig.png Graphic file (type png)
+<use C:/Users/benja/coding/cs229/ps1_attempt2/src/posonly/outputs/posonly_true_
+pred_fig.png>
+Package pdftex.def Info: C:/Users/benja/coding/cs229/ps1_attempt2/src/posonly/o
+utputs/posonly_true_pred_fig.png  used on input line 8.
+(pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
 
-]) (posonly/02-train-y-labels-sol.tex)
-(posonly/03-bayes-warm-up.tex) (posonly/03-bayes-warm-up-sol.tex)
-(posonly/04-constant.tex) (posonly/04-constant-sol.tex)
-(posonly/05-estimate-alpha.tex [13]) (posonly/05-estimate-alpha-sol.tex)
-(posonly/06-plot.tex) (posonly/06-plot-sol.tex)) [14] (poisson/00-main.tex
-(poisson/01-exponential.tex) (poisson/01-exponential-sol.tex)
-(poisson/02-response-fn.tex) (poisson/02-response-fn-sol.tex)
-(poisson/03-gd-update.tex) (poisson/03-gd-update-sol.tex)
-(poisson/04-regression.tex) [15
+Overfull \hbox (45.25687pt too wide) in paragraph at lines 8--9
+[][] 
+ []
 
-] (poisson/04-regression-sol.tex)) [16]
-(glmconvexity/00-main.tex (glmconvexity/01-mean.tex)
-(glmconvexity/01-mean-sol.tex) (glmconvexity/02-var.tex)
-(glmconvexity/02-var-sol.tex) (glmconvexity/03-hessian.tex)
-(glmconvexity/03-hessian-sol.tex) [17
+[12
 
-]) [18] (featuremaps/00-main.tex
-(featuremaps/01-degree-3-math.tex) (featuremaps/01-degree-3-math-sol.tex)
-(featuremaps/02-degree-3-code.tex [19
+]) (posonly/02-train-y-labels.tex) (posonly/02-train-y-labels-sol.tex
+[13 <C:/Users/benja/coding/cs229/ps1_attempt2/src/posonly/outputs/posonly_true_
+pred_fig.png>]
+<C:/Users/benja/coding/cs229/ps1_attempt2/src/posonly/outputs/posonly_naive_pre
+d_fig.png, id=82, 462.528pt x 346.896pt>
+File: C:/Users/benja/coding/cs229/ps1_attempt2/src/posonly/outputs/posonly_naiv
+e_pred_fig.png Graphic file (type png)
+<use C:/Users/benja/coding/cs229/ps1_attempt2/src/posonly/outputs/posonly_naive
+_pred_fig.png>
+Package pdftex.def Info: C:/Users/benja/coding/cs229/ps1_attempt2/src/posonly/o
+utputs/posonly_naive_pred_fig.png  used on input line 8.
+(pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
 
-]) (featuremaps/02-degree-3-code-sol.tex)
-(featuremaps/03-degree-k-code.tex) (featuremaps/03-degree-k-code-sol.tex)
-(featuremaps/04-other-features.tex) (featuremaps/04-other-features-sol.tex)
-(featuremaps/05-overfitting.tex [20]) (featuremaps/05-overfitting-sol.tex))
-[21] (ps1-sol.aux) ) 
+Overfull \hbox (45.25687pt too wide) in paragraph at lines 8--9
+[][] 
+ []
+
+) (posonly/03-bayes-warm-up.tex) (posonly/03-bayes-warm-up-sol.tex [14 <C:/User
+s/benja/coding/cs229/ps1_attempt2/src/posonly/outputs/posonly_naive_pred_fig.pn
+g>]) (posonly/04-constant.tex) (posonly/04-constant-sol.tex
+Overfull \hbox (10.19354pt too wide) in paragraph at lines 14--15
+[]\OT1/cmss/m/n/10 Actually an al-ter-na-tive bet-ter way of show-ing the re-qu
+ired re-la-tion is by con-di-tion-ing $\OML/cmm/m/it/10 y[]; t[]\OMS/cmsy/m/n/1
+0 j[]$\OT1/cmss/m/n/10 ,
+ []
+
+) (posonly/05-estimate-alpha.tex [15]) (posonly/05-estimate-alpha-sol.tex
+Overfull \hbox (24.24634pt too wide) detected at line 10
+[]
+ []
+
+) (posonly/06-plot.tex) (posonly/06-plot-sol.tex
+<C:/Users/benja/coding/cs229/ps1_attempt2/src/posonly/outputs/posonly_adjusted_
+pred_fig.png, id=90, 462.528pt x 346.896pt>
+File: C:/Users/benja/coding/cs229/ps1_attempt2/src/posonly/outputs/posonly_adju
+sted_pred_fig.png Graphic file (type png)
+<use C:/Users/benja/coding/cs229/ps1_attempt2/src/posonly/outputs/posonly_adjus
+ted_pred_fig.png>
+Package pdftex.def Info: C:/Users/benja/coding/cs229/ps1_attempt2/src/posonly/o
+utputs/posonly_adjusted_pred_fig.png  used on input line 7.
+(pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
+
+Overfull \hbox (45.25687pt too wide) in paragraph at lines 7--8
+[][] 
+ []
+
+) [16]) [17 <C:/Users/benja/coding/cs229/ps1_attempt2/src/posonly/outputs/poson
+ly_adjusted_pred_fig.png>] (poisson/00-main.tex (poisson/01-exponential.tex)
+(poisson/01-exponential-sol.tex) (poisson/02-response-fn.tex)
+(poisson/02-response-fn-sol.tex) (poisson/03-gd-update.tex)
+(poisson/03-gd-update-sol.tex) (poisson/04-regression.tex) [18
+
+]
+(poisson/04-regression-sol.tex)) [19] (glmconvexity/00-main.tex
+(glmconvexity/01-mean.tex) (glmconvexity/01-mean-sol.tex)
+(glmconvexity/02-var.tex) (glmconvexity/02-var-sol.tex)
+(glmconvexity/03-hessian.tex) (glmconvexity/03-hessian-sol.tex) [20
+
+]) [21]
+(featuremaps/00-main.tex (featuremaps/01-degree-3-math.tex)
+(featuremaps/01-degree-3-math-sol.tex) (featuremaps/02-degree-3-code.tex
+[22
+
+]) (featuremaps/02-degree-3-code-sol.tex) (featuremaps/03-degree-k-code.tex) (f
+eaturemaps/03-degree-k-code-sol.tex) (featuremaps/04-other-features.tex)
+(featuremaps/04-other-features-sol.tex) (featuremaps/05-overfitting.tex
+[23]) (featuremaps/05-overfitting-sol.tex)) [24] (ps1-sol.aux) ) 
 Here is how much of TeX's memory you used:
- 18081 strings out of 480934
- 348361 string characters out of 2899918
+ 18100 strings out of 480934
+ 349874 string characters out of 2899918
  556982 words of memory out of 3000000
- 33393 multiletter control sequences out of 15000+200000
+ 33408 multiletter control sequences out of 15000+200000
  543708 words of font info for 68 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  65i,15n,64p,1042b,576s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\benja\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/j
-knappen/ec/dpi600\tcrm1000.pk><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/benja/AppData/Local/Progra
-ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/benja/AppData
-/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/
-benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.p
-fb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmmi12.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmmi5.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/benja/AppData/Local/Programs/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/benja/AppData/Loc
-al/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/benja
-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:
-/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-mr17.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmr5.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmr6.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/benja/AppData/Local/Program
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/benja/AppData/Lo
-cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Users/ben
-ja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb>
-<C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmsy10.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmsy7.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/benja/AppData/Local/Programs/Mi
-KTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/benja/AppData/Loca
-l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/
-benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msb
-m10.pfb>
-Output written on ps1-sol.pdf (21 pages, 374547 bytes).
+ <C:\Users\benj
+a\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/U
+sers/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
+x10.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmbx12.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmex10.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/benja/AppData/Local/Pr
+ograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/benja/App
+Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Use
+rs/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7
+.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmmi8.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmr10.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/
+fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/benja/AppData/Local/Programs
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/benja/AppData/Lo
+cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/benja
+/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/
+Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+r7.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmr8.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmsl10.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/benja/AppData/Local/Progr
+ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/benja/AppDat
+a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/
+benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pf
+b><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmti10.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmtt10.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/f
+onts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/benja/AppData/Local/Pro
+grams/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on ps1-sol.pdf (24 pages, 436930 bytes).
 PDF statistics:
- 183 PDF objects out of 1000 (max. 8388607)
+ 202 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 43 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 58 words of extra memory for PDF output out of 10000 (max. 10000000)
 
