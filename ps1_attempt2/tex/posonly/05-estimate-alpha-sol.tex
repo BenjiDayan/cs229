@@ -1,2 +1,12 @@
+\input{../macros.tex}
+\begin{document}
 \begin{answer}
+Assuming that we have a perfect prediction function $h(x^{(i)} = p(y^{(i)} = 1 | x^{(i)})$, (logistic regression on our partial labels $y^{(i)}$ is not perfect but is aiming towards this), If we crucially assume that $p(t^{(i)}=1 | x^{(i)}) \in \{0,1\}$, i.e. given observed data, there is no uncertainty in the true label $t^{(i)}$. Then
+
+\begin{align*}
+E[h(x^{(i)})) | y^{(i)} = 1]
+	&= E[ p(y=1 | x) \;| y=1] = E[ p(y=1 | x) \;| y=1, t=1] \quad \text{,since $y=1 \implies t=1$}\\	
+	&= E[ p(t=1 | x) \alpha \;| y=1, t=1] 
+\end{align*}
 \end{answer}
+\end{document}

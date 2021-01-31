@@ -1,8 +1,8 @@
 import numpy as np
-import util
+import linearclass.util as util
 import time
 import os
-from ..general_utils import sigmoid, quick_solve, plot_decision_boundary, plot
+from general_utils import sigmoid, quick_solve, plot_decision_boundary
 
 #  x_train, y_train = util.load_dataset('ds1_train.csv', add_intercept=True)
 # (800, 3), (800,)
@@ -29,7 +29,7 @@ def main(train_path, valid_path, save_path):
     y_test_pred = clf.predict(x_test)
     
 #    plot_decision_boundary(x_test, y_test, clf.theta, save_path)
-    plot(x_test, y_test, clf.theta, os.path.splitext(save_path)[0] + '_fig.png')
+    util.plot(x_test, y_test, clf.theta, os.path.splitext(save_path)[0] + '_fig.png')
     # Use np.savetxt to save predictions on eval set to save_path
     np.savetxt(save_path, y_test_pred)
     np.savetxt(save_path + '_theta', clf.theta)

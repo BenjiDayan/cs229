@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.4.6)  25 JAN 2021 15:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.4.6)  29 JAN 2021 14:14
 entering extended mode
 **\def\solutions{1} \input{ps1}
  (ps1.tex (macros.tex
@@ -796,14 +796,14 @@ Non-PDF special ignored!
 
 ]) (linearclass/02-solve-logreg.tex)
 (linearclass/02-solve-logreg-sol.tex
-<C:/Users/benja/coding/cs229/ps1_attempt2/src/linearclass/logreg_pred_1_fig.png
-, id=24, 433.62pt x 289.08pt>
-File: C:/Users/benja/coding/cs229/ps1_attempt2/src/linearclass/logreg_pred_1_fi
-g.png Graphic file (type png)
-<use C:/Users/benja/coding/cs229/ps1_attempt2/src/linearclass/logreg_pred_1_fig
-.png>
+<C:/Users/benja/coding/cs229/ps1_attempt2/src/linearclass/outputs/logreg_pred_1
+_v2_fig.png, id=24, 433.62pt x 289.08pt>
+File: C:/Users/benja/coding/cs229/ps1_attempt2/src/linearclass/outputs/logreg_p
+red_1_v2_fig.png Graphic file (type png)
+<use C:/Users/benja/coding/cs229/ps1_attempt2/src/linearclass/outputs/logreg_pr
+ed_1_v2_fig.png>
 Package pdftex.def Info: C:/Users/benja/coding/cs229/ps1_attempt2/src/linearcla
-ss/logreg_pred_1_fig.png  used on input line 8.
+ss/outputs/logreg_pred_1_v2_fig.png  used on input line 8.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
 
 Overfull \hbox (16.34895pt too wide) in paragraph at lines 8--9
@@ -811,37 +811,37 @@ Overfull \hbox (16.34895pt too wide) in paragraph at lines 8--9
  []
 
 [3]
-<C:/Users/benja/coding/cs229/ps1_attempt2/src/linearclass/logreg_pred_2_fig.png
-, id=30, 433.62pt x 289.08pt>
-File: C:/Users/benja/coding/cs229/ps1_attempt2/src/linearclass/logreg_pred_2_fi
-g.png Graphic file (type png)
-<use C:/Users/benja/coding/cs229/ps1_attempt2/src/linearclass/logreg_pred_2_fig
-.png>
+<C:/Users/benja/coding/cs229/ps1_attempt2/src/linearclass/outputs/logreg_pred_2
+_v2_fig.png, id=30, 433.62pt x 289.08pt>
+File: C:/Users/benja/coding/cs229/ps1_attempt2/src/linearclass/outputs/logreg_p
+red_2_v2_fig.png Graphic file (type png)
+<use C:/Users/benja/coding/cs229/ps1_attempt2/src/linearclass/outputs/logreg_pr
+ed_2_v2_fig.png>
 Package pdftex.def Info: C:/Users/benja/coding/cs229/ps1_attempt2/src/linearcla
-ss/logreg_pred_2_fig.png  used on input line 12.
+ss/outputs/logreg_pred_2_v2_fig.png  used on input line 12.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
 
 Overfull \hbox (16.34895pt too wide) in paragraph at lines 12--13
 [][] 
  []
 
-[4 <C:/Users/benja/coding/cs229/ps1_attempt2/src/linearclass/logreg_pred_1_fig.
-png>]) (linearclass/03-gda.tex) (linearclass/03-gda-sol.tex
+[4 <C:/Users/benja/coding/cs229/ps1_attempt2/src/linearclass/outputs/logreg_pre
+d_1_v2_fig.png>]) (linearclass/03-gda.tex) (linearclass/03-gda-sol.tex
 Overfull \hbox (11.53697pt too wide) detected at line 19
 []
  []
 
-[5 <C:/Users/benja/coding/cs229/ps1_attempt2/src/linearclass/logreg_pred_2_fig.
-png>]) (linearclass/04-gda-ll.tex) (linearclass/04-gda-ll-sol.tex [6])
-(linearclass/05-solve-gda.tex) (linearclass/05-solve-gda-sol.tex
-<C:/Users/benja/coding/cs229/ps1_attempt2/src/linearclass/gda_pred_1_fig.png, i
-d=45, 433.62pt x 289.08pt>
-File: C:/Users/benja/coding/cs229/ps1_attempt2/src/linearclass/gda_pred_1_fig.p
-ng Graphic file (type png)
-<use C:/Users/benja/coding/cs229/ps1_attempt2/src/linearclass/gda_pred_1_fig.pn
-g>
+[5 <C:/Users/benja/coding/cs229/ps1_attempt2/src/linearclass/outputs/logreg_pre
+d_2_v2_fig.png>]) (linearclass/04-gda-ll.tex) (linearclass/04-gda-ll-sol.tex
+[6]) (linearclass/05-solve-gda.tex) (linearclass/05-solve-gda-sol.tex
+<C:/Users/benja/coding/cs229/ps1_attempt2/src/linearclass/outputs/gda_pred_1_fi
+g.png, id=45, 433.62pt x 289.08pt>
+File: C:/Users/benja/coding/cs229/ps1_attempt2/src/linearclass/outputs/gda_pred
+_1_fig.png Graphic file (type png)
+<use C:/Users/benja/coding/cs229/ps1_attempt2/src/linearclass/outputs/gda_pred_
+1_fig.png>
 Package pdftex.def Info: C:/Users/benja/coding/cs229/ps1_attempt2/src/linearcla
-ss/gda_pred_1_fig.png  used on input line 8.
+ss/outputs/gda_pred_1_fig.png  used on input line 8.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
 
 Overfull \hbox (16.34895pt too wide) in paragraph at lines 8--9
@@ -849,65 +849,65 @@ Overfull \hbox (16.34895pt too wide) in paragraph at lines 8--9
  []
 
 [7]
-<C:/Users/benja/coding/cs229/ps1_attempt2/src/linearclass/gda_pred_2_fig.png, i
-d=53, 433.62pt x 289.08pt>
-File: C:/Users/benja/coding/cs229/ps1_attempt2/src/linearclass/gda_pred_2_fig.p
-ng Graphic file (type png)
-<use C:/Users/benja/coding/cs229/ps1_attempt2/src/linearclass/gda_pred_2_fig.pn
-g>
+<C:/Users/benja/coding/cs229/ps1_attempt2/src/linearclass/outputs/gda_pred_2_fi
+g.png, id=53, 433.62pt x 289.08pt>
+File: C:/Users/benja/coding/cs229/ps1_attempt2/src/linearclass/outputs/gda_pred
+_2_fig.png Graphic file (type png)
+<use C:/Users/benja/coding/cs229/ps1_attempt2/src/linearclass/outputs/gda_pred_
+2_fig.png>
 Package pdftex.def Info: C:/Users/benja/coding/cs229/ps1_attempt2/src/linearcla
-ss/gda_pred_2_fig.png  used on input line 12.
+ss/outputs/gda_pred_2_fig.png  used on input line 12.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
 
 Overfull \hbox (16.34895pt too wide) in paragraph at lines 12--13
 [][] 
  []
 
-[8 <C:/Users/benja/coding/cs229/ps1_attempt2/src/linearclass/gda_pred_1_fig.png
->]) (linearclass/06-plot-ds1.tex) (linearclass/06-plot-ds1-sol.tex)
+[8 <C:/Users/benja/coding/cs229/ps1_attempt2/src/linearclass/outputs/gda_pred_1
+_fig.png>]) (linearclass/06-plot-ds1.tex) (linearclass/06-plot-ds1-sol.tex)
 (linearclass/07-plot-ds2.tex) (linearclass/07-plot-ds2-sol.tex)
 (linearclass/08-transform.tex) (linearclass/08-transform-sol.tex
-<C:/Users/benja/coding/cs229/ps1_attempt2/src/linearclass/gda_pred1_logx2_fig.p
-ng, id=58, 433.62pt x 289.08pt>
-File: C:/Users/benja/coding/cs229/ps1_attempt2/src/linearclass/gda_pred1_logx2_
-fig.png Graphic file (type png)
-<use C:/Users/benja/coding/cs229/ps1_attempt2/src/linearclass/gda_pred1_logx2_f
-ig.png>
+<C:/Users/benja/coding/cs229/ps1_attempt2/src/linearclass/outputs/gda_pred1_log
+x2_fig.png, id=58, 433.62pt x 289.08pt>
+File: C:/Users/benja/coding/cs229/ps1_attempt2/src/linearclass/outputs/gda_pred
+1_logx2_fig.png Graphic file (type png)
+<use C:/Users/benja/coding/cs229/ps1_attempt2/src/linearclass/outputs/gda_pred1
+_logx2_fig.png>
 Package pdftex.def Info: C:/Users/benja/coding/cs229/ps1_attempt2/src/linearcla
-ss/gda_pred1_logx2_fig.png  used on input line 6.
+ss/outputs/gda_pred1_logx2_fig.png  used on input line 6.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
 
 Overfull \hbox (16.34895pt too wide) in paragraph at lines 6--7
 [][] 
  []
 
-[9 <C:/Users/benja/coding/cs229/ps1_attempt2/src/linearclass/gda_pred_2_fig.png
->]
-<C:/Users/benja/coding/cs229/ps1_attempt2/src/linearclass/gda_pred_1_logtrans_f
-ig.png, id=63, 433.62pt x 289.08pt>
-File: C:/Users/benja/coding/cs229/ps1_attempt2/src/linearclass/gda_pred_1_logtr
-ans_fig.png Graphic file (type png)
-<use C:/Users/benja/coding/cs229/ps1_attempt2/src/linearclass/gda_pred_1_logtra
-ns_fig.png>
+[9 <C:/Users/benja/coding/cs229/ps1_attempt2/src/linearclass/outputs/gda_pred_2
+_fig.png>]
+<C:/Users/benja/coding/cs229/ps1_attempt2/src/linearclass/outputs/gda_pred_1_lo
+gtrans_fig.png, id=63, 433.62pt x 289.08pt>
+File: C:/Users/benja/coding/cs229/ps1_attempt2/src/linearclass/outputs/gda_pred
+_1_logtrans_fig.png Graphic file (type png)
+<use C:/Users/benja/coding/cs229/ps1_attempt2/src/linearclass/outputs/gda_pred_
+1_logtrans_fig.png>
 Package pdftex.def Info: C:/Users/benja/coding/cs229/ps1_attempt2/src/linearcla
-ss/gda_pred_1_logtrans_fig.png  used on input line 12.
+ss/outputs/gda_pred_1_logtrans_fig.png  used on input line 12.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
 
 Overfull \hbox (16.34895pt too wide) in paragraph at lines 12--13
 [][] 
  []
 
-) [10 <C:/Users/benja/coding/cs229/ps1_attempt2/src/linearclass/gda_pred1_logx2
-_fig.png>]) [11 <C:/Users/benja/coding/cs229/ps1_attempt2/src/linearclass/gda_p
-red_1_logtrans_fig.png>] (posonly/00-main.tex (posonly/01-train-t-labels.tex)
-(posonly/01-train-t-labels-sol.tex) (posonly/02-train-y-labels.tex [12
+) [10 <C:/Users/benja/coding/cs229/ps1_attempt2/src/linearclass/outputs/gda_pre
+d1_logx2_fig.png>]) [11 <C:/Users/benja/coding/cs229/ps1_attempt2/src/linearcla
+ss/outputs/gda_pred_1_logtrans_fig.png>] (posonly/00-main.tex
+(posonly/01-train-t-labels.tex) (posonly/01-train-t-labels-sol.tex)
+(posonly/02-train-y-labels.tex [12
 
-])
-(posonly/02-train-y-labels-sol.tex) (posonly/03-bayes-warm-up.tex)
-(posonly/03-bayes-warm-up-sol.tex) (posonly/04-constant.tex)
-(posonly/04-constant-sol.tex) (posonly/05-estimate-alpha.tex [13])
-(posonly/05-estimate-alpha-sol.tex) (posonly/06-plot.tex)
-(posonly/06-plot-sol.tex)) [14] (poisson/00-main.tex
+]) (posonly/02-train-y-labels-sol.tex)
+(posonly/03-bayes-warm-up.tex) (posonly/03-bayes-warm-up-sol.tex)
+(posonly/04-constant.tex) (posonly/04-constant-sol.tex)
+(posonly/05-estimate-alpha.tex [13]) (posonly/05-estimate-alpha-sol.tex)
+(posonly/06-plot.tex) (posonly/06-plot-sol.tex)) [14] (poisson/00-main.tex
 (poisson/01-exponential.tex) (poisson/01-exponential-sol.tex)
 (poisson/02-response-fn.tex) (poisson/02-response-fn-sol.tex)
 (poisson/03-gd-update.tex) (poisson/03-gd-update-sol.tex)
@@ -930,7 +930,7 @@ red_1_logtrans_fig.png>] (posonly/00-main.tex (posonly/01-train-t-labels.tex)
 [21] (ps1-sol.aux) ) 
 Here is how much of TeX's memory you used:
  18081 strings out of 480934
- 348077 string characters out of 2899918
+ 348361 string characters out of 2899918
  556982 words of memory out of 3000000
  33393 multiletter control sequences out of 15000+200000
  543708 words of font info for 68 fonts, out of 3000000 for 9000
@@ -965,7 +965,7 @@ KTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/benja/AppData/Loca
 l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/
 benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msb
 m10.pfb>
-Output written on ps1-sol.pdf (21 pages, 372490 bytes).
+Output written on ps1-sol.pdf (21 pages, 374547 bytes).
 PDF statistics:
  183 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

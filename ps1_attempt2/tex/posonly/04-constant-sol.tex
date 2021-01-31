@@ -1,2 +1,23 @@
+%\input{../macros.tex}
+%\begin{document}
 \begin{answer}
+For events $A,B,C$ we have
+\begin{align*}
+p(A|B) &= \frac{p(A,B)}{p(B)} = \frac{p(A,B,C)}{p(B,C)} \frac{p(B,C)}{p(B)} \frac{p(A,B)}{p(A,B,C)}\\
+	&= \frac{p(A|B,C) p(C|B)}{p(C|A,B)}
+\end{align*}
+So writing $t^{(i)} = 1$ as event $A$, $x^{(i)} = x$ as event $B$, and $y^{(i)} = 1$ as event $C$, we get
+\begin{align*}
+p(t=1|x) = \frac{p(t=1|x,y=1) p(y=1 | x)}{p(y=1 | x, t=1)} = \frac{p(y=1 | x)}{\alpha}
+\end{align*}
+
+Actually an alternative better way of showing the required relation is by conditioning $y^{(i)},t^{(i)}|_{x^{(i)}=x}$, giving 
+
+\begin{align*}
+p(y=1|x)
+	&= \sum_t p(y=1|x, t=t)\; p(t=t | x) \\
+	&= p(y=1|x, t=1)\; p(t=1|x) + p(y=1|x, t=0)\;p(t=0|x)\\
+	&= \alpha\; p(t=1|x)
+\end{align*}
 \end{answer}
+%\end{document}

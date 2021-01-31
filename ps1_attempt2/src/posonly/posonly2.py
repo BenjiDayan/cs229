@@ -1,13 +1,14 @@
-import numpy as np
-import util
 import sys
 import os
+print(sys.path)
+import numpy as np
+import posonly.util as util
 
 sys.path.append('../linearclass')
 
 ### NOTE : You need to complete logreg implementation first!
 
-from logreg import LogisticRegression
+from linearclass.logreg import LogisticRegression
 
 # Character to replace with sub-problem letter in plot_path/save_path
 WILDCARD = 'X'
@@ -40,18 +41,30 @@ def main(train_path, valid_path, test_path, save_path):
     
     x_test, t_test = util.load_dataset(valid_path, label_col='t', add_intercept=True)
     t_test_pred = clf.predict(x_test)
-    util.plot(x_test, t_test, clf.theta, os.path.splitext(save_path)[0] + '_fig.png')
-    np.savetxt(save_path, t_test_pred)
-    np.savetxt(save_path + '_theta', clf.theta)
+    util.plot(x_test, t_test, clf.theta, os.path.splitext(output_path_true)[0] + '_fig.png')
+    np.savetxt(output_path_true, t_test_pred)
+    np.savetxt(output_path_true + '_theta', clf.theta)
     
     # Part (b): Train on y-labels and test on true labels
     # Make sure to save predicted probabilities to output_path_naive using np.savetxt()
+    x_train, y_train = util.load_dataset(train_path, label_col='y', add_intercept=True)
+    clf = LogisticRegression()
+    clf.fit(x_train, y_train)
+
+    x_test, t_test = util.load_dataset(valid_path, label_col='t', add_intercept=True)
+    t_test_pred = clf.predict(x_test)
+    util.plot(x_test, t_test, clf.theta, os.path.splitext(output_path_naive)[0] + '_fig.png')
+    np.savetxt(output_path_naive, t_test_pred)
+    np.savetxt(output_path_naive + '_theta', clf.theta)
+
+
     # Part (f): Apply correction factor using validation set and test on true labels
     # Plot and use np.savetxt to save outputs to output_path_adjusted
     # *** END CODER HERE
 
 if __name__ == '__main__':
+    os.makedirs('outputs', exist_ok=True)
     main(train_path='train.csv',
         valid_path='valid.csv',
         test_path='test.csv',
-        save_path='posonly_X_pred.txt')
+        save_path=os.path.join('outputs', 'posonly_X_pred.txt'))
