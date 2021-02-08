@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.4.6)  31 JAN 2021 18:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.4.6)  8 FEB 2021 19:15
 entering extended mode
 **\def\solutions{1} \input{ps1}
  (ps1.tex (macros.tex
@@ -967,64 +967,148 @@ Overfull \hbox (45.25687pt too wide) in paragraph at lines 7--8
 ly_adjusted_pred_fig.png>] (poisson/00-main.tex (poisson/01-exponential.tex)
 (poisson/01-exponential-sol.tex) (poisson/02-response-fn.tex)
 (poisson/02-response-fn-sol.tex) (poisson/03-gd-update.tex)
-(poisson/03-gd-update-sol.tex) (poisson/04-regression.tex) [18
+(poisson/03-gd-update-sol.tex) (poisson/04-regression.tex [18
 
-]
-(poisson/04-regression-sol.tex)) [19] (glmconvexity/00-main.tex
-(glmconvexity/01-mean.tex) (glmconvexity/01-mean-sol.tex)
-(glmconvexity/02-var.tex) (glmconvexity/02-var-sol.tex)
-(glmconvexity/03-hessian.tex) (glmconvexity/03-hessian-sol.tex) [20
+])
+(poisson/04-regression-sol.tex
+<../src/poisson/outputs/poisson_pred_fig.png, id=105, 462.528pt x 346.896pt>
+File: ../src/poisson/outputs/poisson_pred_fig.png Graphic file (type png)
+<use ../src/poisson/outputs/poisson_pred_fig.png>
+Package pdftex.def Info: ../src/poisson/outputs/poisson_pred_fig.png  used on i
+nput line 5.
+(pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
 
-]) [21]
-(featuremaps/00-main.tex (featuremaps/01-degree-3-math.tex)
-(featuremaps/01-degree-3-math-sol.tex) (featuremaps/02-degree-3-code.tex
-[22
+Overfull \hbox (45.25687pt too wide) in paragraph at lines 5--6
+[][] 
+ []
 
-]) (featuremaps/02-degree-3-code-sol.tex) (featuremaps/03-degree-k-code.tex) (f
-eaturemaps/03-degree-k-code-sol.tex) (featuremaps/04-other-features.tex)
-(featuremaps/04-other-features-sol.tex) (featuremaps/05-overfitting.tex
-[23]) (featuremaps/05-overfitting-sol.tex)) [24] (ps1-sol.aux) ) 
+) [19]) [20 <../src/poisson/outputs/poisson_pred_fig.png>]
+(glmconvexity/00-main.tex (glmconvexity/01-mean.tex)
+(glmconvexity/01-mean-sol.tex) (glmconvexity/02-var.tex)
+(glmconvexity/02-var-sol.tex) (glmconvexity/03-hessian.tex)
+(glmconvexity/03-hessian-sol.tex [21
+
+])) [22] (featuremaps/00-main.tex
+(featuremaps/01-degree-3-math.tex) (featuremaps/01-degree-3-math-sol.tex)
+(featuremaps/02-degree-3-code.tex [23
+
+]) (featuremaps/02-degree-3-code-sol.tex
+<../src/featuremaps/outputs/degree_3_poly_fitting_fig.png, id=124, 462.528pt x 
+346.896pt>
+File: ../src/featuremaps/outputs/degree_3_poly_fitting_fig.png Graphic file (ty
+pe png)
+<use ../src/featuremaps/outputs/degree_3_poly_fitting_fig.png>
+Package pdftex.def Info: ../src/featuremaps/outputs/degree_3_poly_fitting_fig.p
+ng  used on input line 5.
+(pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
+
+Overfull \hbox (45.25687pt too wide) in paragraph at lines 5--6
+[][] 
+ []
+
+) (featuremaps/03-degree-k-code.tex [24 <../src/featuremaps/outputs/degree_3_po
+ly_fitting_fig.png>]) (featuremaps/03-degree-k-code-sol.tex
+<../src/featuremaps/outputs/multi_degree_plot.png, id=129, 462.528pt x 346.896p
+t>
+File: ../src/featuremaps/outputs/multi_degree_plot.png Graphic file (type png)
+<use ../src/featuremaps/outputs/multi_degree_plot.png>
+Package pdftex.def Info: ../src/featuremaps/outputs/multi_degree_plot.png  used
+ on input line 5.
+(pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
+
+Overfull \hbox (45.25687pt too wide) in paragraph at lines 5--6
+[][] 
+ []
+
+) (featuremaps/04-other-features.tex [25 <../src/featuremaps/outputs/multi_degr
+ee_plot.png>]) (featuremaps/04-other-features-sol.tex
+<../src/featuremaps/outputs/multi_degree_with_sin_plot.png, id=135, 462.528pt x
+ 346.896pt>
+File: ../src/featuremaps/outputs/multi_degree_with_sin_plot.png Graphic file (t
+ype png)
+<use ../src/featuremaps/outputs/multi_degree_with_sin_plot.png>
+Package pdftex.def Info: ../src/featuremaps/outputs/multi_degree_with_sin_plot.
+png  used on input line 5.
+(pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
+
+Overfull \hbox (45.25687pt too wide) in paragraph at lines 5--6
+[][] 
+ []
+
+) (featuremaps/05-overfitting.tex [26 <../src/featuremaps/outputs/multi_degree_
+with_sin_plot.png>]) (featuremaps/05-overfitting-sol.tex
+<../src/featuremaps/outputs/multi_degree_plot_small_dataset.png, id=140, 462.52
+8pt x 346.896pt>
+File: ../src/featuremaps/outputs/multi_degree_plot_small_dataset.png Graphic fi
+le (type png)
+<use ../src/featuremaps/outputs/multi_degree_plot_small_dataset.png>
+Package pdftex.def Info: ../src/featuremaps/outputs/multi_degree_plot_small_dat
+aset.png  used on input line 5.
+(pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
+
+Overfull \hbox (45.25687pt too wide) in paragraph at lines 5--6
+[][] 
+ []
+
+[27]
+<../src/featuremaps/outputs/multi_degree_plot_with_sin_small_dataset.png, id=14
+4, 462.528pt x 346.896pt>
+File: ../src/featuremaps/outputs/multi_degree_plot_with_sin_small_dataset.png G
+raphic file (type png)
+<use ../src/featuremaps/outputs/multi_degree_plot_with_sin_small_dataset.png>
+Package pdftex.def Info: ../src/featuremaps/outputs/multi_degree_plot_with_sin_
+small_dataset.png  used on input line 10.
+(pdftex.def)             Requested size: 462.52686pt x 346.89514pt.
+
+Overfull \hbox (45.25687pt too wide) in paragraph at lines 10--11
+[][] 
+ []
+
+[28 <../src/featuremaps/outputs/multi_degree_plot_small_dataset.png>]))
+[29 <../src/featuremaps/outputs/multi_degree_plot_with_sin_small_dataset.png>]
+(ps1-sol.aux) ) 
 Here is how much of TeX's memory you used:
- 18100 strings out of 480934
- 349874 string characters out of 2899918
+ 18140 strings out of 480934
+ 351926 string characters out of 2899918
  556982 words of memory out of 3000000
- 33408 multiletter control sequences out of 15000+200000
- 543708 words of font info for 68 fonts, out of 3000000 for 9000
+ 33439 multiletter control sequences out of 15000+200000
+ 544002 words of font info for 69 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  65i,15n,64p,1042b,576s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\benj
-a\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/U
-sers/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmb
-x10.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmbx12.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmex10.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/benja/AppData/Local/Pr
-ograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/benja/App
-Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Use
-rs/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7
-.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmmi8.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmr10.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/
-fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/benja/AppData/Local/Programs
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/benja/AppData/Lo
-cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/benja
-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/
-Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-r7.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmr8.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
-/public/amsfonts/cm/cmsl10.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/benja/AppData/Local/Progr
-ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/benja/AppDat
-a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/
-benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pf
-b><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmti10.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmtt10.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/f
-onts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/benja/AppData/Local/Pro
-grams/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on ps1-sol.pdf (24 pages, 436930 bytes).
+ <C:\Users\benja\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknapp
+en/ec/dpi600\tcrm1000.pk><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/benja/AppData/Local/Programs/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/benja/AppData/Loca
+l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/benja
+/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C
+:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmmi12.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public
+/amsfonts/cm/cmmi5.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/benja/AppData/Local/Programs/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/benja/AppData/Local/Pr
+ograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/benja/AppD
+ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/User
+s/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.
+pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmr5.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmr6.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/benja/AppData/Local/Programs/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/benja/AppData/Local/P
+rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Users/benja/Ap
+pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/U
+sers/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cms
+sbx10.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmsy10.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmsy5.pfb><C:/Users/benja/AppData/Local/Programs/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/benja/AppData/Local/Pr
+ograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/benja/App
+Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Us
+ers/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols
+/msam10.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
+c/amsfonts/symbols/msbm10.pfb>
+Output written on ps1-sol.pdf (29 pages, 710336 bytes).
 PDF statistics:
- 202 PDF objects out of 1000 (max. 8388607)
+ 234 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 58 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 88 words of extra memory for PDF output out of 10000 (max. 10000000)
 

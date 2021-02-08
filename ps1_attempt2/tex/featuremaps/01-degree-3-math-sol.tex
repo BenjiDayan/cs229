@@ -1,2 +1,6 @@
+%\input{../macros.tex}
+%\begin{document}
 \begin{answer}
+The objective function $J(\theta) = \frac{1}{2} \sum [h_\theta (\hat{x}^{(i)}) - y^{(i)}]^2 = \frac{1}{2} \sum [\theta^T \hat{x}^{(i)} - y^{(i)}]^2$. This has gradient $\nabla_\theta J(\theta) = \sum (\theta^T \hat{x}^{(i)} - y) \hat{x}^{(i)}$. Thus the update rule for linear regression gradient descent is $\theta \mapsto \theta - \alpha \nabla J(\theta)$ in order to minimise the objective function.
 \end{answer}
+%\end{document}

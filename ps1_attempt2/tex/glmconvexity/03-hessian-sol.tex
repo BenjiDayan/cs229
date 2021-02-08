@@ -1,2 +1,6 @@
+%\input{../macros.tex}
+%\begin{document}
 \begin{answer}
+The loss function, NLL, is $l(\theta) = - \log(p(y;\eta)) = - \log(b(y)) + a(\theta^T x) - y \theta^T x$. Then $\frac{\partial l(\theta)}{\partial \theta} = x a'(\theta^T x) - yx$ and $\frac{\partial^2 l(\theta)}{\partial \theta^2} = xx^T a''(\theta^T x) = xx^T \text{Var}(Y|\eta = \theta^T x)$. Hence the Hessian is positive semi-definite, as the variance is non-negative, by the fact that $z^T H z = (z^T x)^2 \text{Var}(Y| \eta= \theta^T x) \geq 0 \quad \forall z$
 \end{answer}
+%\end{document}

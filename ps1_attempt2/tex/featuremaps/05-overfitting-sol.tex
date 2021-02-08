@@ -1,2 +1,14 @@
+%\input{../macros.tex}
+%\begin{document}
 \begin{answer}
+\begin{figure}[H]
+	\includegraphics{../src/featuremaps/outputs/multi_degree_plot_small_dataset.png}
+\end{figure}
+
+With a much smaller dataset, even $k=5$ and above are already overfitting a deal. Unfortunately $k=1,2,3$ are bad fits as well. The only way to get a good fit is once again including sin in the feature-map, which overpowers the other functions and gives pretty good fit.
+\begin{figure}[H]
+	\includegraphics{../src/featuremaps/outputs/multi_degree_plot_with_sin_small_dataset.png}
+\end{figure}
+
 \end{answer}
+%\end{document}
