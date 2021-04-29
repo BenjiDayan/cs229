@@ -1,2 +1,45 @@
+%\input{../macros.tex}
+%\begin{document}
 \begin{answer}
+We see that for dataset A we quickly achieve convergence after 30374 iterations, whereas for dataset B it takes many more iterations to get $\theta$ to converge. For both the size of the gradient vector decreases over time, just much more slowly for dataset B.
+
+\begin{verbatim*}
+==== Training model on data set A ====
+Finished 10000 iterations
+Theta: [-20.81394174  21.45250215  19.85155266]
+Size of theta: 1287.5141623056304
+Size of grad: 5.222218480921017e-11
+Finished 20000 iterations
+Theta: [-20.81437785  21.45295156  19.85198173]
+Size of theta: 1287.5686341528296
+Size of grad: 2.8439949007650234e-19
+Finished 30000 iterations
+Theta: [-20.81437788  21.45295159  19.85198176]
+Size of theta: 1287.568638172836
+Size of grad: 1.5326309220390799e-27
+Converged in 30374 iterations
+\end{verbatim*}
+
+Compared with
+
+\begin{verbatim*}
+==== Training model on data set B ====
+Finished 10000 iterations
+Theta: [-52.74109217  52.92982273  52.69691453]
+Size of theta: 8360.153738379526
+Size of grad: 0.001129658631566177
+Finished 20000 iterations
+Theta: [-68.10040977  68.26496086  68.09888223]
+Size of theta: 13935.228454051608
+Size of grad: 0.00047228214977839664
+Finished 30000 iterations
+Theta: [-79.01759142  79.17745526  79.03755803]
+Size of theta: 18759.78475534314
+...
+\end{verbatim*}
+
+It appears that with dataset B the theta vector is unhelpfully just growing in size, not really changing its direction at all.
+
+
 \end{answer}
+%\end{document}

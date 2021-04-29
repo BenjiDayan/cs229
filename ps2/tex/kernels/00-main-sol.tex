@@ -1,2 +1,34 @@
+%\input{../macros.tex}
+%\begin{document}
 \begin{answer}
+\begin{enumerate}[label=(\alph*)]
+\item $K_{ij} = K'_{ij} + K''_{ij}$ is still symmetric, and still positive definite via $a^T K a = a^T K' a + a^T K'' a$
+
+\item $K_ij = K'_ij - K''_ij$ is not necessarily symmetric semi-pos-def as e.g. $K'' = 2 K'$ then $K = -K'$ is now symmetric semi-neg-def
+
+\item $K = aK'$ where $a>0$ is clearly still a kernel
+
+\item $K = -aK'$ where $a>0$ is clearly never a kernel
+
+\item $K(x,z) = K'(x,z)K''(x,z)$ i.e. $K_{ij} = K'_{ij} K''_{ij}$ (no summation) is a bit tricky. Consider
+that since $K', K''$ are both kernels, then e.g. $K'(x,z) = \alpha(x)^T \alpha(z)$ and $K''(x,z) = \beta(x)^T \beta(z)$ for some unknown dimensional maps $\alpha, \beta$. Then writing $\alpha_i$ for $\alpha(x_i)$ for our arbitrary set of vectors under consideration $\{x_1, ..., x_n\}$ (that gives us the corresponding $n \times n$ matrix $K_{ij}$),
+\begin{align*}
+	a^T K a 
+	&= \sum_{i,j} a_i K_{ij} a_j 
+	 = \sum_{i,j} a_i (\alpha_i^T \alpha_j \times \beta_i^T \beta_j) a_j
+	\\
+	&= \sum_{i,j} a_i (\sum_k \alpha_{ik}^T \alpha_{jk}) (\sum_l \beta_{il} \beta_{jl}) a_j
+	\\
+	&= \sum_{k,l} \sum_i \left [ a_i \alpha_{ik} \beta_{il} \left ( \sum_j a_j \alpha_{jk} \beta_{jl} \right)\right]
+	\\
+	&= \sum_{k,l} \left ( \sum_i a_i \alpha_{ik} \beta_{il} \right )^2 \geq 0
+\end{align*}
+
+\item $K(x,z) = f(x) f(z)$ for a real valued func $f: \R^d \to \R$, then $a^T K a = a_i f_i f_j a_j = (\sum_i a_i f_i)^2 \geq 0$
+
+\item $K(x,z) = K'(\phi(x), \phi(z))$ for some func $\phi: \R^d \to \R^p$ then still as above, $a^T K a = a_i \phi_i \phi_j a_j \geq 0$
+
+\item $K(x,z) = p(K'(x,z))$ for some polynomial $p$ with positive coefficients, then we can use the previous parts of the question to construct $K$ and still be a valid kernel, e.g. $K', K'K', K'K'K',...$ are all valid kernels from part (e), and we can add positive scaled kernels together and still have a kernel by other parts.
+\end{enumerate}
 \end{answer}
+%\end{document}

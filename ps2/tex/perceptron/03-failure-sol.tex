@@ -1,2 +1,7 @@
 \begin{answer}
+The perceptron training algorithm of $\theta \mapsto \theta + \alpha(y_i - g(\theta^T \phi(x_i)))\phi(x_i)$ is an odd data point wise stochastic gradient ascent of maximising the overall likelihood of a logistic classifier $g(z)= 1/(1 + e^{-z})$ for a certain feature map and parameter vector $z = \theta^T \phi(x)$. Using the kernel we find a way to better represent high dimensional feature maps, replacing $\theta = \sum_j \beta_j \phi(x_j)$. So with the dot product kernel $K(x,z) = x^Tz$, this is taking $\phi(x)=x$, so since $x$ is a 2-d vector here we're just training a line classifier (without even an intercept term). The result is actually not bad as you can see by the graph, it's pretty much the best you can do with a line.
+
+The gaussian kernel classifier is great as expected being an infinite dimensional kernel of so many combinations.
+
+The non psd kernel is weird, just computationally you can see that $K_{i+1,j} = 0$ always, s.t. $\beta_i = \alpha(y_i - 1)$ is essentially random choice of $-0.5,0$. Then prediction $g(\sum_j \beta_j K(x_j, x))=0$ since $K(x_j, x)=0$ always (as $x_j \neq x)$ generally. Another observation is that $K_{ij} = -I$ negative identity matrix, not sure how it helps though :(.
 \end{answer}

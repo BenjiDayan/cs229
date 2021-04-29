@@ -1,2 +1,16 @@
+%\input{../macros.tex}
+%\begin{document}
 \begin{answer}
+\begin{enumerate}
+\item a higher constant learning rate would normally make convergence happen faster, but here there is no real convergence point. In fact the doubling time $n_k \propto \theta/(\alpha \text{grad})$ would decrease as expected, but the theta diff to determine stopping point is also increased, i.e. waiting for $\alpha \text{grad}$ small enough in size. I.e. overall the effect cancels out, given that $y \approx \propto 1/x$
+
+\item Decreasing the learning rate over time would help speed stopping of the algorithm, e.g. $\alpha = 1/t^2$. This will definitely squeeze the size of the steps to quickly be small enough.
+
+\item Linear scaling of the input features is unhelpful, it's akin to starting further or nearer along in the $\theta$ doubling process - doesn't remove the need for the increasingly lengthy doubling times
+
+\item A regularization term of $||\theta||_2^2$ would help, as it would force an optimum to exist within an acceptable bounds of size of parameter, to which we could converge to much more naturally.
+
+\item Adding zero-mean gaussian noise to he training data or labels would be useful, as either now the points aren't all split in half, or doubling $\theta$ endlessly is no longer a good strategy (some maximum $\theta$ over which we're counter productive).
+\end{enumerate}
 \end{answer}
+%\end{document}

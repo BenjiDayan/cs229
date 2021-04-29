@@ -4,6 +4,17 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 import util
+from dataclasses import dataclass, field
+from typing import List
+import numpy as np
+
+
+@dataclass
+class PerceptronState:
+    beta: List[float] = field(default_factory=list)
+    seen_training_points: List[np.ndarray] = field(default_factory=list)
+    # kernel: np.ndarray = np.zeros((0,))
+    # i_step: int = 0
 
 
 def initial_state():
@@ -16,6 +27,7 @@ def initial_state():
     """
 
     # *** START CODE HERE ***
+    return PerceptronState()
     # *** END CODE HERE ***
 
 
@@ -33,10 +45,12 @@ def predict(state, kernel, x_i):
         Returns the prediction (i.e 0 or 1)
     """
     # *** START CODE HERE ***
+    # theta^T phi(x) = sgn (sum_j beta_j K(x_j, x))
+    return sign( sum([beta_j * kernel(x_j, x_i) for beta_j, x_j in zip(state.beta, state.seen_training_points)]) )
     # *** END CODE HERE ***
 
 
-def update_state(state, kernel, learning_rate, x_i, y_i):
+def update_state(state: PerceptronState, kernel, learning_rate, x_i, y_i):
     """Updates the state of the perceptron.
 
     Args:
@@ -47,6 +61,13 @@ def update_state(state, kernel, learning_rate, x_i, y_i):
         y_i: A 0 or 1 indicating the label for a single instance
     """
     # *** START CODE HERE ***
+    # update is beta_{i}^(i) = beta_{i-1}^(i-1) + alpha(y_{i} - sgn(sum_j K_{i, j} beta_j^(i-1)))
+    # (actually in the original equation in notes we had i+1 but using i here for code easierability)
+    #K_beta_sum = sum([kernel(x_i, x_j) * beta_j for x_j, beta_j in zip(state.seen_training_points, state.beta)])
+    next_predict = predict(state, kernel, x_i)
+    beta_i = learning_rate * (y_i - next_predict)
+    state.beta.append(beta_i)
+    state.seen_training_points.append(x_i)
     # *** END CODE HERE ***
 
 
