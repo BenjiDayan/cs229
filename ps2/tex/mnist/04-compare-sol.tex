@@ -1,4 +1,18 @@
 \begin{answer}
+	\begin{verbatim}
+>>> test_labels = one_hot_labels(test_labels)
+>>> mean = np.mean(test_data)
+>>> std = np.std(test_data)
+>>> test_data = (test_data - mean) / std
+>>> accuracy_base_test = nn_test(test_data, test_labels, base['params'])
+>>> accuracy_reg_test = nn_test(test_data, test_labels, reg['params'])
+>>> accuracy_base_test
+0.9691
+>>> accuracy_reg_test
+0.9647
+\end{verbatim}
+This doesn't quite match the expected 0.982870 and 0.96760, not sure what's up there...
+I did run the training on smaller batch sizes to suit my memory but when training on larger I still didn't seem to have much difference between with/without regularization.
 \end{answer}
    
   

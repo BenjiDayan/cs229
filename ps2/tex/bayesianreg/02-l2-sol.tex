@@ -1,2 +1,19 @@
+%\input{../macros.tex}
+%\begin{document}
 \begin{answer}
+We'll convert our MLE with $L_2$ regularization to the form of $\theta_{MAP}$ by doing 
+
+$\text{argmin}_\theta - \log p(y | x, \theta) + \lambda ||\theta||_2^2 = \text{argmax}_\theta p(y | x, \theta) \; \exp(- \lambda || \theta ||_2^2)$.
+
+Then the problem is really simplified, as by (a) we have
+\begin{align*}
+\theta_{MAP} = \text{argmax}_\theta p(y | x, \theta) p(\theta) =
+\\
+\text{argmax}_\theta p(y | x, \theta) (2\pi)^{-k/2} |\Sigma|^{-1/2} \exp( - \frac{\theta^T \Sigma^{-1} \theta}{2})
+\\
+\text{i.e. we're done by the prior of } \theta \sim N(0, \eta^2 I);\; \Sigma = \eta^{-2}I
+\\
+\text{so then } \lambda = \frac{\eta^{-2}}{2}
+\end{align*}
 \end{answer}
+%\end{document}

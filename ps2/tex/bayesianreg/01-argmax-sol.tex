@@ -1,2 +1,17 @@
+%\input{../macros.tex}
+%\begin{document}
 \begin{answer}
+\begin{align*}
+\theta_{\text{MAP}} =
+\text{argmax}_\theta\; p(\theta | x, y) =
+\text{argmax}_\theta\; \frac{p(\theta, x, y)}{p(x, y)} =
+\text{argmax}_\theta\; \frac{p(\theta, x, y)}{p(x, \theta)} \frac{p(x, \theta)}{p(x, y)}
+\\
+= \text{argmax}_\theta\; p(y | x, \theta) \frac{p(x, \theta)}{p(x)} \frac{p(x)}{p(x, y)} =
+\text{argmax}_\theta\; p(y | x, \theta) p(x)
+\end{align*}
+
+
+Where at the last step we have used the assumption that $p(\theta) = p(\theta | x)$ (i.e. $\theta$ is independent from $x$ (if no knowledge of $y$)), and that we can drop the terms with no $\theta$ since we're argmaxing of $\theta$
 \end{answer}
+%\end{document}

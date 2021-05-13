@@ -1,2 +1,15 @@
+%\input{../macros.tex}
+%\begin{document}
 \begin{answer}
+\begin{align*}
+\theta_{MAP} &= \text{argmax}_\theta\;  \log p(y | x, \theta) + \log p(\theta) \quad \text{using fact that LR model has } p(\theta | x) = p(\theta) 
+\\
+&= \text{argmax}_\theta\; \log \left( \exp(-\frac{(y - X \theta)^T \Sigma (y - X \theta)}{2}) \right ) + \log ( \prod_i \frac{1}{2b} \exp \left ( \frac{- |\theta_i|}{b} \right) )
+\\
+&= \text{argmin}_\theta\; \frac{\sigma^{-2}}{2} ||y - X \theta||_2^2 + \frac{1}{b} ||\theta||_1
+\end{align*}
+
+Hence finding $\theta_{MAP}$ is equivalent to solving the linear regression problem with $L_1$ regularization, i.e. minimising the loss $J(\theta) = ||y - X \theta ||_2^2 + \gamma || \theta ||_1$, where here $\gamma = \frac{2 \sigma^2}{b}$
 \end{answer}
+%\end{document}
+

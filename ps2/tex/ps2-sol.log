@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.4.6)  26 APR 2021 21:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.4.6)  9 MAY 2021 09:34
 entering extended mode
 **\def\solutions{1} \input{ps2}
  (ps2.tex (macros.tex
@@ -880,61 +880,76 @@ File: ../src/perceptron/perceptron_non_psd_output.png Graphic file (type png)
 Package pdftex.def Info: ../src/perceptron/perceptron_non_psd_output.png  used 
 on input line 16.
 (pdftex.def)             Requested size: 284.52274pt x 189.68181pt.
-) (perceptron/03-failure.tex) (perceptron/03-failure-sol.tex)) [13 <../src/perc
-eptron/perceptron_rbf_output.png> <../src/perceptron/perceptron_non_psd_output.
-png>] (mnist/00-main.tex
-<mnist/mnist_plot.png, id=77, 596.2275pt x 362.35374pt>
+) (perceptron/03-failure.tex) (perceptron/03-failure-sol.tex [13 <../src/percep
+tron/perceptron_rbf_output.png> <../src/perceptron/perceptron_non_psd_output.pn
+g>])) [14] (mnist/00-main.tex
+<mnist/mnist_plot.png, id=80, 596.2275pt x 362.35374pt>
 File: mnist/mnist_plot.png Graphic file (type png)
 <use mnist/mnist_plot.png>
 Package pdftex.def Info: mnist/mnist_plot.png  used on input line 13.
 (pdftex.def)             Requested size: 298.11302pt x 181.17642pt.
- [14
+ [15
 
  <./mnist/mnist_plot.png>] (mnist/01-grad.tex)
-(mnist/01-grad-sol.tex) (mnist/02-unregularized.tex [15])
-(mnist/02-unregularized-sol.tex) (mnist/03-regularized.tex)
-(mnist/03-regularized-sol.tex) (mnist/04-compare.tex [16])
-(mnist/04-compare-sol.tex)) [17] (bayesianreg/00-main.tex
-(bayesianreg/01-argmax.tex) (bayesianreg/01-argmax-sol.tex)
-(bayesianreg/02-l2.tex) (bayesianreg/02-l2-sol.tex)
-(bayesianreg/03-closed-form.tex [18
+(mnist/01-grad-sol.tex) (mnist/02-unregularized.tex [16])
+(mnist/02-unregularized-sol.tex
+<../src/mnist/baseline.pdf, id=90, 462.52798pt x 346.89601pt>
+File: ../src/mnist/baseline.pdf Graphic file (type pdf)
+<use ../src/mnist/baseline.pdf>
+Package pdftex.def Info: ../src/mnist/baseline.pdf  used on input line 5.
+(pdftex.def)             Requested size: 284.54123pt x 213.40594pt.
+) (mnist/03-regularized.tex [17 <../src/mnist/baseline.pdf>]) (mnist/03-regular
+ized-sol.tex
+<../src/mnist/regularized.pdf, id=131, 462.52798pt x 346.89601pt>
+File: ../src/mnist/regularized.pdf Graphic file (type pdf)
+<use ../src/mnist/regularized.pdf>
+Package pdftex.def Info: ../src/mnist/regularized.pdf  used on input line 5.
+(pdftex.def)             Requested size: 284.54123pt x 213.40594pt.
+) (mnist/04-compare.tex [18 <../src/mnist/regularized.pdf>]) (mnist/04-compare-
+sol.tex)) [19]
+(bayesianreg/00-main.tex (bayesianreg/01-argmax.tex)
+(bayesianreg/01-argmax-sol.tex) (bayesianreg/02-l2.tex [20
 
-]) (bayesianreg/03-closed-form-sol.tex)
-(bayesianreg/04-l1.tex) (bayesianreg/04-l1-sol.tex)) [19] (ps2-sol.aux) ) 
+])
+(bayesianreg/02-l2-sol.tex) (bayesianreg/03-closed-form.tex)
+(bayesianreg/03-closed-form-sol.tex) (bayesianreg/04-l1.tex [21])
+(bayesianreg/04-l1-sol.tex)) [22] (ps2-sol.aux) ) 
 Here is how much of TeX's memory you used:
- 18031 strings out of 480934
- 344291 string characters out of 2899918
+ 18044 strings out of 480934
+ 344682 string characters out of 2899918
  558999 words of memory out of 3000000
- 33381 multiletter control sequences out of 15000+200000
+ 33391 multiletter control sequences out of 15000+200000
  541637 words of font info for 60 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  65i,14n,64p,909b,587s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\U
-sers\benja\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000
-.pk><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmbx10.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmex10.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/benja/AppData/Local/Progra
-ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/benja/AppData/
-Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/be
-nja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-<C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmr17.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmr5.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmr6.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/benja/AppData/Local/Prog
-rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/benja/AppData
-/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Users/
-benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.p
-fb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmsy10.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmsy7.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/benja/AppData/Local/Programs
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/benja/AppData/L
-ocal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on ps2-sol.pdf (19 pages, 458357 bytes).
+ <C:\Users\benja\AppData\Local
+\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/benja/AppD
+ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Use
+rs/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex1
+0.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cmextra/cmex7.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/
+type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/benja/AppData/Local/Programs/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/benja/AppData/Local/P
+rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/benja/App
+Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Use
+rs/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17
+.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmr5.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmr6.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fo
+nts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/benja/AppData/Local/Programs/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/benja/AppData/Local/
+Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Users/benja/A
+ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/
+Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+ss8.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmsy10.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
+pe1/public/amsfonts/cm/cmsy7.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/benja/AppData/Local/Pro
+grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/benja/AppD
+ata/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on ps2-sol.pdf (22 pages, 515586 bytes).
 PDF statistics:
- 159 PDF objects out of 1000 (max. 8388607)
+ 252 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 48 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 58 words of extra memory for PDF output out of 10000 (max. 10000000)
 
