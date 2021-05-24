@@ -1,2 +1,20 @@
+%\input{../macros.tex}
+%\begin{document}
 \begin{answer}
+semi supervised EM algorithm for Gaussian mixture model is straightforward. We have log likelihood $l_{\text{semisup}}(\theta) = l_{\text{unsup}}(\theta) + \alpha l_{\text{sup}}(\theta)$ which we wish to maximise, where here $\theta = \phi, \mu, \Sigma$. for the E-step we compute $Q_i(z_i) = p(z_i | x_i; \phi, \mu, \Sigma)$ for the unsupervised points $x_i \in \{x_1, ..., x_n\}$.
+
+We parametrise the distribution $Q_i(z_i) \in \R^k$ for k choices of Gaussian distribution by writing
+\begin{align*}
+Q_i(z_i)_j = w^{(i)}_j
+&= p(z_i = j | x_i; \phi, \mu, \Sigma)
+\\
+&= p(x|z) \frac{p(z)}{p(x)}
+\\
+&= p(x_i | z_i = j) \frac{p(z_i = j)}{p(x_i)}
+\\
+&= N(\mu_j, \Sigma_j) \frac{\phi_j}{\sum_{l=1}^k p(x_i | z_i = l) p(z_i = l)}
+\\
+&= \frac{ N(x_i; \mu_j, \Sigma_j) \phi_j}{\sum_{l=1}^k N(x_i; \mu_l, \Sigma_l) \phi_l}
+\end{align*}
 \end{answer}
+%\end{document}

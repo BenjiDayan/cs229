@@ -7,6 +7,24 @@ K = 4           # Number of Gaussians in the mixture model
 NUM_TRIALS = 3  # Number of trials to run (can be adjusted for debugging)
 UNLABELED = -1  # Cluster label for unlabeled data points (do not change)
 
+def gaussian_pdf(x, mu, sigma):
+    """
+    Args:
+        x: (..., d)
+        mu: (..., d)
+        sigma: (..., d, d)
+
+    Returns: (...,)
+    """
+    d = x.shape[-1]
+    assert d == mu.shape[-1] and d == sigma.shape[-2] and d == sigma.shape[-1]
+    sigma_inv = np.linalg.inv(sigma)
+    expanded = np.expand_dims(x - mu, axis=(-2))
+    transpose_indices = np.concatenate([np.arange(len(expanded.shape) - 2), [-1, -2]])
+    return (2 * np.pi)**(-d/2) * np.linalg.det(sigma_inv) * \
+        np.exp(
+            (-1/2) * np.squeeze(expanded @ sigma_inv @ expanded.transpose(transpose_indices))
+        )
 
 def main(is_semi_supervised, trial_num):
     """Problem 3: EM for Gaussian Mixture Models (unsupervised and semi-supervised)"""
@@ -15,6 +33,7 @@ def main(is_semi_supervised, trial_num):
 
     # Load dataset
     train_path = os.path.join('.', 'train.csv')
+    # (1000,2), (1000,1)
     x_all, z_all = load_gmm_dataset(train_path)
 
     # Split into labeled and unlabeled examples
@@ -26,10 +45,23 @@ def main(is_semi_supervised, trial_num):
     # *** START CODE HERE ***
     # (1) Initialize mu and sigma by splitting the n_examples data points uniformly at random
     # into K groups, then calculating the sample mean and covariance for each group
+    initial_group_idxs = np.random.randint(K, size=(x.shape[0],))
+
+
+    x_groups = [x[initial_group_idxs == i] for i in range(K)]  # List[(n_i, 2)
+    mu = np.stack([x_group.mean(axis=0) for x_group in x_groups])  # (K, 2)
+    x_groups_zeroed = [x_group - m for x_group, m in zip(x_groups, mu)]  # List[(n_i, 2)]
+    sigma = np.stack([z.T @ z for z in x_groups_zeroed])  # (K, 2, 2)
+
     # (2) Initialize phi to place equal probability on each Gaussian
     # phi should be a numpy array of shape (K,)
+    phi = np.ones(shape=(K,)) / K
+
     # (3) Initialize the w values to place equal probability on each Gaussian
     # w should be a numpy array of shape (m, K)
+    n = x.shape[0]  # number of unlabelled datapoints
+    w = np.ones(shape=(n, K))/K
+
     # *** END CODE HERE ***
 
     if is_semi_supervised:
@@ -72,11 +104,44 @@ def run_em(x, w, phi, mu, sigma):
     it = 0
     ll = prev_ll = None
     while it < max_iter and (prev_ll is None or np.abs(ll - prev_ll) >= eps):
-        pass  # Just a placeholder for the starter code
+
         # *** START CODE HERE
         # (1) E-step: Update your estimates in w
+        # w^i_j = p(z_i = j | x_i ; mu, Sigma, phi) = p(x_i | z_i) p(z_i) / p(x_i)
+        # = N(x_i; mu_j, Sigma_j) phi_j / (sum_k=1^K N(x_i ; mu_k, Sigma_k) phi_k)
+
+        k = phi.shape[0]  # number of clusters = k
+        n = x.shape[0]
+        x_cluster_copies = np.tile(x, [k] + [1] * x.ndim).swapaxes(0, 1)  # (n x k x d) k copies of x (x is nxd)
+        gaussian = gaussian_pdf(x_cluster_copies, mu, sigma)  # N(x_i; mu_j, Sigma_j) is (n x k)
+        prob_xi = (phi * gaussian).sum(axis=1)  # p(x_i) is (n,)
+        w = (1 / prob_xi).reshape(-1, 1) * phi * gaussian  # (n, 1) * (k) * (n x k) = (n x k)
+
         # (2) M-step: Update the model parameters phi, mu, and sigma
+        cluster_sum_probs = w.sum(axis=0)  # (k,) with lth component sum_i=1^n w^i_l
+        phi = w.sum(axis=0)/n
+        mu = (  # (k, d)
+                np.expand_dims(w, -1) @ np.expand_dims(x, -2)  # (n, k, 1) @ (n, 1, d) = (n, k, d)
+             ).sum(axis=0) / \
+             w.sum(axis=0).reshape(-1, 1)
+
+        sigma_ls = []
+        for l in range(k):
+            w_l = w[:, l]  # (n,)
+            mu_l = mu[l, :]  # (d,)
+            cov = (np.expand_dims(x - mu_l, axis=-1) @ np.expand_dims(x - mu_l, axis=-2))  # (n, d, d)
+            sigma_l = \
+                (
+                    w_l.reshape(-1, 1, 1) * cov
+                ).sum(axis=0) / \
+                w_l.sum(axis=0)
+            sigma_ls.append(sigma_l)
+
+        sigma = np.stack(sigma_ls)
+
+
         # (3) Compute the log-likelihood of the data to check for convergence.
+
         # By log-likelihood, we mean `ll = sum_x[log(sum_z[p(x|z) * p(z)])]`.
         # We define convergence by the first iteration where abs(ll - prev_ll) < eps.
         # Hint: For debugging, recall part (a). We showed that ll should be monotonically increasing.
@@ -186,10 +251,13 @@ def load_gmm_dataset(csv_path):
 
 if __name__ == '__main__':
     np.random.seed(229)
+    x, mu = np.ones(shape=(9, 5, 7, 4)), np.random.rand(9, 5, 7, 4)
+    sigma = np.random.rand(9, 5, 7, 4, 4)
+    out = gaussian_pdf(x, mu, sigma)
     # Run NUM_TRIALS trials to see how different initializations
     # affect the final predictions with and without supervision
-    for t in range(NUM_TRIALS):
-        main(is_semi_supervised=False, trial_num=t)
+    # for t in range(NUM_TRIALS):
+    #     main(is_semi_supervised=False, trial_num=t)
 
         # *** START CODE HERE ***
         # Once you've implemented the semi-supervised version,

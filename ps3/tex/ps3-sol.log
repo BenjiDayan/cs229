@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.4.6)  9 MAY 2021 09:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.4.6)  24 MAY 2021 20:09
 entering extended mode
 **\def\solutions{1} \input{ps3}
  (ps3.tex (macros.tex
@@ -837,23 +837,52 @@ Overfull \hbox (24.063pt too wide) in paragraph at lines 16--17
 oids com-puted with \OT1/cmtt/m/n/10 peppers-small.tiff\OT1/cmr/m/n/10 .
  []
 
-) (k_means/01-k_means_impl_sol.tex) (k_means/02-compression_factor.tex)
-(k_means/02-compression_factor_sol.tex)) [8
+) (k_means/01-k_means_impl_sol.tex
+<../src/k_means/orig_large.png, id=52, 281.1303pt x 297.0297pt>
+File: ../src/k_means/orig_large.png Graphic file (type png)
+<use ../src/k_means/orig_large.png>
+Package pdftex.def Info: ../src/k_means/orig_large.png  used on input line 5.
+(pdftex.def)             Requested size: 242.38934pt x 256.09773pt.
+<../src/k_means/updated_large.png, id=54, 281.1303pt x 297.0297pt>
+File: ../src/k_means/updated_large.png Graphic file (type png)
+<use ../src/k_means/updated_large.png>
+Package pdftex.def Info: ../src/k_means/updated_large.png  used on input line 8
+.
+(pdftex.def)             Requested size: 242.38934pt x 256.09773pt.
+ [8
 
-] (semi_supervised_em/00-main.tex
+]) (k_means/02-compression_factor.tex)
+(k_means/02-compression_factor_sol.tex [9 <../src/k_means/orig_large.png> <../s
+rc/k_means/updated_large.png>])) [10] (semi_supervised_em/00-main.tex
 (semi_supervised_em/01-convergence.tex)
-(semi_supervised_em/01-convergence-sol.tex) [9
+(semi_supervised_em/01-convergence-sol.tex [11
 
-]
-(semi_supervised_em/02-e-step.tex) (semi_supervised_em/02-e-step-sol.tex)
-(semi_supervised_em/03-m-step.tex) (semi_supervised_em/03-m-step-sol.tex)
-(semi_supervised_em/04-impl-unsupervised.tex)
+])
+(semi_supervised_em/02-e-step.tex) (semi_supervised_em/02-e-step-sol.tex
+[12]) (semi_supervised_em/03-m-step.tex) (semi_supervised_em/03-m-step-sol.tex
+Overfull \hbox (43.03732pt too wide) in paragraph at lines 3--7
+\OT1/cmss/m/n/10 the ex-pres-sion $\OML/cmm/m/it/10 ELBO\OT1/cmr/m/n/10 (\OML/c
+mm/m/it/10 Q; \OT1/cmr/m/n/10 ) + \OML/cmm/m/it/10 l[]\OT1/cmr/m/n/10 (\OML/cm
+m/m/it/10 \OT1/cmr/m/n/10 ) = [][] [][] \OML/cmm/m/it/10 Q[]\OT1/cmr/m/n/10 (\
+OML/cmm/m/it/10 z[]\OT1/cmr/m/n/10 )[] [] [] + \OML/cmm/m/it/10  [][] [] p\OT1
+/cmr/m/n/10 (\OML/cmm/m/it/10 x[]; z[]\OT1/cmr/m/n/10 ; \OML/cmm/m/it/10 ; ; 
+\OT1/cmr/m/n/10 )$
+ []
+
+[13]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.53 \end{answer}
+                 
+? 
+) (semi_supervised_em/04-impl-unsupervised.tex)
 (semi_supervised_em/04-impl-unsupervised-sol.tex)
-(semi_supervised_em/05-impl-semi-supervised.tex [10])
+(semi_supervised_em/05-impl-semi-supervised.tex)
 (semi_supervised_em/05-impl-semi-supervised-sol.tex)
 (semi_supervised_em/06-comparison.tex)
-(semi_supervised_em/06-comparison-sol.tex)) [11] (pca/00-main.tex
-(pca/00-main-sol.tex)) [12
+(semi_supervised_em/06-comparison-sol.tex)) [14] (pca/00-main.tex
+(pca/00-main-sol.tex)) [15
 
 ] (ica/00-main.tex (ica/01-gaussian.tex)
 (ica/01-gaussian-sol.tex) (ica/02-laplace.tex
@@ -865,44 +894,48 @@ u-tion $\OMS/cmsy/m/n/10 L\OT1/cmr/m/n/10 (0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10
 n/10 ) = [] [] []$.
  []
 
-) (ica/02-laplace-sol.tex) (ica/03-cocktail.tex [13
+) (ica/02-laplace-sol.tex) (ica/03-cocktail.tex [16
 
-]) (ica/03-cocktail-sol.tex)) [14] (ps3-sol.aux) ) 
+]) (ica/03-cocktail-sol.tex)) [17] (ps3-sol.aux) ) 
 Here is how much of TeX's memory you used:
- 17960 strings out of 480934
- 342676 string characters out of 2899918
- 557109 words of memory out of 3000000
- 33340 multiletter control sequences out of 15000+200000
- 541205 words of font info for 59 fonts, out of 3000000 for 9000
+ 17985 strings out of 480934
+ 343206 string characters out of 2899918
+ 560109 words of memory out of 3000000
+ 33358 multiletter control sequences out of 15000+200000
+ 542410 words of font info for 63 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 65i,13n,64p,869b,386s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 65i,13n,64p,869b,577s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\benja\AppData\Loca
 l\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/benja/App
 Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Us
-ers/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex
-10.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmmi10.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmmi5.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/benja/AppData/Local/Progr
-ams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/benja/AppData
-/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/b
-enja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb
+ers/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx
+12.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmex10.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmmi10.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/benja/AppData/Local/Prog
+rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/benja/AppDat
+a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/
+benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pf
+b><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmr17.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmr5.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/font
+s/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/benja/AppData/Local/Programs/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/benja/AppData/Local/Pr
+ograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/benja/AppDa
+ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/User
+s/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10
+.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmss8.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
+public/amsfonts/cm/cmsy10.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/benja/AppData/Local/Program
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/benja/AppData/
+Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/b
+enja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt8.pfb
 ><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
-cm/cmr5.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmr6.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/
-type1/public/amsfonts/cm/cmr7.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/benja/AppData/Local/Prog
-rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Users/benja/AppDa
-ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/User
-s/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.
-pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmti10.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmtt10.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmtt8.pfb><C:/Users/benja/AppData/Local/Program
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on ps3-sol.pdf (14 pages, 277412 bytes).
+symbols/msbm10.pfb>
+Output written on ps3-sol.pdf (17 pages, 871498 bytes).
 PDF statistics:
- 139 PDF objects out of 1000 (max. 8388607)
+ 165 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 28 words of extra memory for PDF output out of 10000 (max. 10000000)
 

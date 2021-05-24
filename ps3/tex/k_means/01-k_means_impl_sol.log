@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.4.6)  10 MAY 2021 22:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.4.6)  24 MAY 2021 20:10
 entering extended mode
 **./01-k_means_impl_sol.tex
 (01-k_means_impl_sol.tex
@@ -764,39 +764,60 @@ Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count307
  ABD: EveryShipout initializing macros
-<../../src/k_means/orig_large.png, id=4, 281.1303pt x 297.0297pt>
-File: ../../src/k_means/orig_large.png Graphic file (type png)
-<use ../../src/k_means/orig_large.png>
-Package pdftex.def Info: ../../src/k_means/orig_large.png  used on input line 5
-.
-(pdftex.def)             Requested size: 242.38934pt x 256.09773pt.
-<../../src/k_means/updated_large.png, id=6, 281.1303pt x 297.0297pt>
-File: ../../src/k_means/updated_large.png Graphic file (type png)
-<use ../../src/k_means/updated_large.png>
-Package pdftex.def Info: ../../src/k_means/updated_large.png  used on input lin
-e 8.
-(pdftex.def)             Requested size: 242.38934pt x 256.09773pt.
- [1
+
+LaTeX Warning: File `../src/k_means/orig_large.png' not found on input line 5.
+
+
+! Package pdftex.def Error: File `../src/k_means/orig_large.png' not found: usi
+ng draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 ...aspectratio]{../src/k_means/orig_large.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `../src/k_means/updated_large.png' not found on input line 
+8.
+
+
+! Package pdftex.def Error: File `../src/k_means/updated_large.png' not found: 
+using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 ...ectratio]{../src/k_means/updated_large.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[1
 Non-PDF special ignored!
 <special> header=psfrag.pro
 
-{C:/Users/benja/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <../../src/k
-_means/orig_large.png> <../../src/k_means/updated_large.png>]
+{C:/Users/benja/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 (01-k_means_impl_sol.aux) ) 
 Here is how much of TeX's memory you used:
- 17694 strings out of 480934
- 335455 string characters out of 2899918
+ 17730 strings out of 480934
+ 336216 string characters out of 2899918
  548765 words of memory out of 3000000
- 33230 multiletter control sequences out of 15000+200000
- 533641 words of font info for 28 fonts, out of 3000000 for 9000
+ 33251 multiletter control sequences out of 15000+200000
+ 533809 words of font info for 29 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,7n,62p,444b,317s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 63i,6n,62p,444b,359s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fo
 nts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/benja/AppData/Local/Programs/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb>
-Output written on 01-k_means_impl_sol.pdf (1 page, 571267 bytes).
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/benja/AppData/Lo
+cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on 01-k_means_impl_sol.pdf (1 page, 34698 bytes).
 PDF statistics:
- 22 PDF objects out of 1000 (max. 8388607)
+ 21 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 23 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

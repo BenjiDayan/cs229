@@ -1,2 +1,61 @@
+\input{../macros.tex}
+\begin{document}
 \begin{answer}
+For the semi supervised M-step we maximise over $\theta = \phi, \mu, \Sigma$ while keeping $Q$ fixed the expression $ELBO(Q, \theta) + l_{\text{sup}}(\theta) = \sum_{i=1}^n \sum_{j=1}^k Q_i(z_i)_j \log \frac{p(x_i,z_i; \phi, \mu, \Sigma)}{Q_i(z_i)_j} + \alpha \sum_{i=1}^{\tilde{n}} \log p(x_i, z_i; \phi, \mu, \Sigma)$
+\linebreak
+So having pre-computed in E-step the fixed $Q_i(z_i)_j = w^i_j$, we can differentiate in turn for each of $\phi, \mu, \Sigma$. Rewriting the whole expression to be maximised as
+\begin{equation*}
+\sum_{i=1}^n \sum_{j=1}^k w^i_j \log \frac{\phi_j \; N(x_i ; \mu_j, \Sigma_j)}{w^i_j} + \alpha \sum_{i=1}^{\tilde{n}} \log  \left ( \phi_{\tilde{z}_i} \; N(\tilde{x_i} | \tilde{z_i}; \mu, \Sigma) \right )
+\end{equation*}
+\subsection*{mu}
+We get
+\begin{align*}
+\frac{\partial}{\partial \mu_l} &=
+\sum_{i=1}^n w^i_l \frac{\partial}{\partial \mu_l} \log  N(x_i ; \mu_j, \Sigma_j) +
+\alpha \sum_{i=1}^{\tilde{n}} \frac{\partial}{\partial \mu_l} \log N(\tilde{x}_i | \tilde{z_i}; \mu, \Sigma)
+\\
+&= \sum_{i=1}^n w^i_l \Sigma_l^{-1} (x_i - \mu_l) + 
+\alpha \sum_{\tilde{z}_i = l} \Sigma_l^{-1} (\tilde{x}_i - \mu_l)
+\end{align*}
+Setting this to $0$ we get
+\begin{align*}
+\mu_l =
+\frac{
+	\sum_{i=1}^n w^i_l x_i + \alpha \sum_{\tilde{z}_i = l} \tilde{x}_i
+}
+{
+	\sum_{i=1}^n w^i_l + \alpha \#\{\tilde{z}_i = l\}
+}
+\end{align*}
+\subsection*{phi}
+Similarly for $\phi$ we have
+\begin{align*}
+\frac{\partial}{\partial \phi_l} = \sum_{i=1}^n w^i_l (1/\phi_l) + \alpha \sum_{\tilde{z}_i = l} (1/\phi_l) = (1/\phi_l) \sum_{i=1}^n w^i_l + \alpha \#\{\tilde{z}_i = l\}
+\end{align*}
+with constraint that $\sum_l \phi_l = 1$, so we apply the Lagrangian multipliers method:
+\begin{align*}
+\mathcal{L}(\phi, \lambda) = \sum_{l=1}^k \sum_{i=1}^n w^i_l \log \phi_l + \alpha \#\{\tilde{z}_i = l\} \phi_l \;+\; \lambda( \sum_l \phi_l - 1)
+\\
+\frac{\partial \mathcal{L}}{\partial \phi_l} = (1/\phi_l) \sum_{i=1}^n w^i_l + \alpha \#\{\tilde{z}_i = l\} \;+\; \lambda = 0
+\\
+\text{this applies for each $l=1,...,k$, with $\lambda$ constant, so we surmise that}
+\\
+\phi_l = C \sum_{i=1}^n w^i_l + \alpha \#\{\tilde{z}_i = l\} \quad \text{for some constant $C$, again constant across each $l$}
+\\
+\text{so applying constraint $\sum_l \phi_l = 1$ we get} \quad
+\phi_l = \frac{\sum_{i=1}^n w^i_l + \alpha \#\{\tilde{z}_i = l\}}
+{n + \alpha \tilde{n}}
+\end{align*}
+
+
+\subsection*{Sigma}
+I cannot be bothered to write this all out again, you get the pattern, so we end up with 
+\begin{align*}
+\Sigma_l = \frac{\sum_{i=1}^n w^i_l (x_i - \mu_l)(x_i - \mu_l)^T}
+{\sum_{i=1}^n w^i_l}
+ \;+\;
+ \alpha  \frac{\sum_{\tilde{z}_i = l} (\tilde{x}_i - \mu_l)(\tilde{x_i} -  \mu_l)^T}
+ {\#{\tilde{z}_i = l}}
+\end{align*}
 \end{answer}
+\end{document}
