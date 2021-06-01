@@ -1,2 +1,15 @@
+%\input{../macros.tex}
+%\begin{document}
 \begin{answer}
+We had the variance derivation of PCA for $k=1$ being seeking to maximise the variance of the projections, i.e. maximising $\sum_{i=1}^n (u^T x_i)^2$ (where we use the fact that the vectors $x_i$ have been mean zeroed already to ensure that the mean of $u^T x_i$ is 0, so we are indeed capturing the sample variance). So then we're equivalently maximising $u^T (\sum_{i=1}^n x_i x_i^T) u$  which shows us that the optimal unit vector $u$ is the eigenvector of the largest eigenvalue of the sample covariance matrix.
+\linebreak
+
+In the minimal projection error setup we want to instead minimise over unit vector $u$ the value of $\sum_{i=1}^n || x_i - f_u (x_i)||^2$, however $f_u(x_i) = (u^T x_i)u$, so we're minimising over
+\begin{align*}
+  \sum_{i=1}^n ||x_i - (u^T x_i) u ||^2 
+= \sum_{i=1}^n (x_i - (u^T x_i) u)^T (x_i - (u^T x_i) u)
+= \sum_{i=1}^n x_i^T x_i - (u^T x_i)^2
+\end{align*}
+where the last line comes through since $u^T u = 1$. Hence equivalent to the previous variance maximisation.
 \end{answer}
+%\end{document}

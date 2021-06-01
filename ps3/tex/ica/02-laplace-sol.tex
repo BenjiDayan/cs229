@@ -1,2 +1,27 @@
+%\input{../macros.tex}
+%\begin{document}
 \begin{answer}
+With pdf $g'(s_j) = \frac{1}{2} \exp(-|s_j|)$ we get
+\begin{align*}
+l(W) 
+= \sum_{i=1}^n \left ( 
+\log |W| + \sum_{j=1}^d -\log 2 - |w_j^T x_i|
+\right)
+\end{align*}
+So then taking $\nabla_W$ of the log  likelihood to maximise it, noting that $\nabla_{W_{ab}} \sum_{j=1}^d |w_j^T x_i| = \text{sign}(w_a^T x^{(i)}) x^{(i)}_b$
+we get
+
+\begin{align*}
+\nabla_W l(W) &=
+\sum_{i=1}^n \left ( 
+\frac{1}{|W|} \text{adj}(W)^T - \text{sign} (W x_i)x_i^T
+\right)
+\\
+&\text{giving us stochastic update rule}
+\\ W :&= W + \alpha (
+	W^{-T} - \text{sign}(W x_i) x_i^T
+)
+\end{align*}
+
 \end{answer}
+%\end{document}

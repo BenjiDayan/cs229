@@ -1,5 +1,5 @@
-\input{../macros.tex}
-\begin{document}
+%\input{../macros.tex}
+%\begin{document}
 \begin{answer}
 For the semi supervised M-step we maximise over $\theta = \phi, \mu, \Sigma$ while keeping $Q$ fixed the expression $ELBO(Q, \theta) + l_{\text{sup}}(\theta) = \sum_{i=1}^n \sum_{j=1}^k Q_i(z_i)_j \log \frac{p(x_i,z_i; \phi, \mu, \Sigma)}{Q_i(z_i)_j} + \alpha \sum_{i=1}^{\tilde{n}} \log p(x_i, z_i; \phi, \mu, \Sigma)$
 \linebreak
@@ -51,11 +51,15 @@ with constraint that $\sum_l \phi_l = 1$, so we apply the Lagrangian multipliers
 \subsection*{Sigma}
 I cannot be bothered to write this all out again, you get the pattern, so we end up with 
 \begin{align*}
-\Sigma_l = \frac{\sum_{i=1}^n w^i_l (x_i - \mu_l)(x_i - \mu_l)^T}
-{\sum_{i=1}^n w^i_l}
- \;+\;
- \alpha  \frac{\sum_{\tilde{z}_i = l} (\tilde{x}_i - \mu_l)(\tilde{x_i} -  \mu_l)^T}
- {\#{\tilde{z}_i = l}}
+\Sigma_l = 
+\frac{
+		\sum_{i=1}^n w^i_l (x_i - \mu_l)(x_i - \mu_l)^T \;+\;
+		\alpha  \sum_{\tilde{z}_i = l} (\tilde{x}_i - \mu_l)(\tilde{x_i} -  \mu_l)^T
+	}
+	{
+		\sum_{i=1}^n w^i_l \;+\;
+		\alpha \#\{\tilde{z}_i = l\}
+	}
 \end{align*}
 \end{answer}
-\end{document}
+%\end{document}

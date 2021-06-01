@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.4.6)  24 MAY 2021 20:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 2.9.7350 64-bit) (preloaded format=pdflatex 2020.4.6)  31 MAY 2021 18:04
 entering extended mode
 **\def\solutions{1} \input{ps3}
  (ps3.tex (macros.tex
@@ -869,23 +869,96 @@ OML/cmm/m/it/10 z[]\OT1/cmr/m/n/10 )[] [] [] + \OML/cmm/m/it/10  [][] [] p\OT1
 \OT1/cmr/m/n/10 )$
  []
 
-[13]
-! Missing $ inserted.
-<inserted text> 
-                $
-l.53 \end{answer}
-                 
-? 
-) (semi_supervised_em/04-impl-unsupervised.tex)
-(semi_supervised_em/04-impl-unsupervised-sol.tex)
-(semi_supervised_em/05-impl-semi-supervised.tex)
-(semi_supervised_em/05-impl-semi-supervised-sol.tex)
-(semi_supervised_em/06-comparison.tex)
-(semi_supervised_em/06-comparison-sol.tex)) [14] (pca/00-main.tex
-(pca/00-main-sol.tex)) [15
+[13]) (semi_supervised_em/04-impl-unsupervised.tex)
+(semi_supervised_em/04-impl-unsupervised-sol.tex
+<../src/semi_supervised_em/pred_0.pdf, id=81, 867.24pt x 578.16pt>
+File: ../src/semi_supervised_em/pred_0.pdf Graphic file (type pdf)
+<use ../src/semi_supervised_em/pred_0.pdf>
+Package pdftex.def Info: ../src/semi_supervised_em/pred_0.pdf  used on input li
+ne 5.
+(pdftex.def)             Requested size: 384.10106pt x 256.06737pt.
+<../src/semi_supervised_em/pred_1.pdf, id=82, 867.24pt x 578.16pt>
+File: ../src/semi_supervised_em/pred_1.pdf Graphic file (type pdf)
+<use ../src/semi_supervised_em/pred_1.pdf>
+Package pdftex.def Info: ../src/semi_supervised_em/pred_1.pdf  used on input li
+ne 8.
+(pdftex.def)             Requested size: 384.10106pt x 256.06737pt.
+ [14]
+<../src/semi_supervised_em/pred_2.pdf, id=86, 867.24pt x 578.16pt>
+File: ../src/semi_supervised_em/pred_2.pdf Graphic file (type pdf)
+<use ../src/semi_supervised_em/pred_2.pdf>
+Package pdftex.def Info: ../src/semi_supervised_em/pred_2.pdf  used on input li
+ne 11.
+(pdftex.def)             Requested size: 384.10106pt x 256.06737pt.
+ [15 <../src/semi_supervised_em/pred_0.pdf> <../src/semi_supervised_em/pred_1.p
+df
 
-] (ica/00-main.tex (ica/01-gaussian.tex)
-(ica/01-gaussian-sol.tex) (ica/02-laplace.tex
+pdfTeX warning: pdflatex.exe (file ../src/semi_supervised_em/pred_1.pdf): PDF i
+nclusion: multiple pdfs with page group included in a single page
+>]) (semi_supervised_em/05-impl-semi-supervised.tex)
+(semi_supervised_em/05-impl-semi-supervised-sol.tex
+<../src/semi_supervised_em/pred_ss_0.pdf, id=177, 867.24pt x 578.16pt>
+File: ../src/semi_supervised_em/pred_ss_0.pdf Graphic file (type pdf)
+<use ../src/semi_supervised_em/pred_ss_0.pdf>
+Package pdftex.def Info: ../src/semi_supervised_em/pred_ss_0.pdf  used on input
+ line 5.
+(pdftex.def)             Requested size: 384.10106pt x 256.06737pt.
+<../src/semi_supervised_em/pred_ss_1.pdf, id=178, 867.24pt x 578.16pt>
+File: ../src/semi_supervised_em/pred_ss_1.pdf Graphic file (type pdf)
+<use ../src/semi_supervised_em/pred_ss_1.pdf>
+Package pdftex.def Info: ../src/semi_supervised_em/pred_ss_1.pdf  used on input
+ line 8.
+(pdftex.def)             Requested size: 384.10106pt x 256.06737pt.
+ [16 <../src/semi_supervised_em/pred_2.pdf>]
+<../src/semi_supervised_em/pred_ss_2.pdf, id=226, 867.24pt x 578.16pt>
+File: ../src/semi_supervised_em/pred_ss_2.pdf Graphic file (type pdf)
+<use ../src/semi_supervised_em/pred_ss_2.pdf>
+Package pdftex.def Info: ../src/semi_supervised_em/pred_ss_2.pdf  used on input
+ line 11.
+(pdftex.def)             Requested size: 384.10106pt x 256.06737pt.
+ [17 <../src/semi_supervised_em/pred_ss_0.pdf> <../src/semi_supervised_em/pred_
+ss_1.pdf
+
+pdfTeX warning: pdflatex.exe (file ../src/semi_supervised_em/pred_ss_1.pdf): PD
+F inclusion: multiple pdfs with page group included in a single page
+>]) (semi_supervised_em/06-comparison.tex)
+(semi_supervised_em/06-comparison-sol.tex
+<../src/semi_supervised_em/pred_labelled.pdf, id=321, 867.24pt x 578.16pt>
+File: ../src/semi_supervised_em/pred_labelled.pdf Graphic file (type pdf)
+<use ../src/semi_supervised_em/pred_labelled.pdf>
+Package pdftex.def Info: ../src/semi_supervised_em/pred_labelled.pdf  used on i
+nput line 9.
+(pdftex.def)             Requested size: 384.10106pt x 256.06737pt.
+ [18 <../src/semi_supervised_em/pred_ss_2.pdf>]
+<../src/semi_supervised_em/pred_alpha_40_ss.pdf, id=371, 867.24pt x 578.16pt>
+File: ../src/semi_supervised_em/pred_alpha_40_ss.pdf Graphic file (type pdf)
+<use ../src/semi_supervised_em/pred_alpha_40_ss.pdf>
+Package pdftex.def Info: ../src/semi_supervised_em/pred_alpha_40_ss.pdf  used o
+n input line 18.
+(pdftex.def)             Requested size: 384.10106pt x 256.06737pt.
+ [19 <../src/semi_supervised_em/pred_labelled.pdf>]
+<../src/semi_supervised_em/pred_alpha_80_ss.pdf, id=420, 867.24pt x 578.16pt>
+File: ../src/semi_supervised_em/pred_alpha_80_ss.pdf Graphic file (type pdf)
+<use ../src/semi_supervised_em/pred_alpha_80_ss.pdf>
+Package pdftex.def Info: ../src/semi_supervised_em/pred_alpha_80_ss.pdf  used o
+n input line 22.
+(pdftex.def)             Requested size: 384.10106pt x 256.06737pt.
+)) [20 <../src/semi_supervised_em/pred_alpha_40_ss.pdf> <../src/semi_supervised
+_em/pred_alpha_80_ss.pdf
+
+pdfTeX warning: pdflatex.exe (file ../src/semi_supervised_em/pred_alpha_80_ss.p
+df): PDF inclusion: multiple pdfs with page group included in a single page
+>] (pca/00-main.tex (pca/00-main-sol.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--6
+
+ []
+
+)) [21
+
+] (ica/00-main.tex (ica/01-gaussian.tex) (ica/01-gaussian-sol.tex)
+[22
+
+] (ica/02-laplace.tex
 Overfull \hbox (0.81352pt too wide) in paragraph at lines 3--4
 \OT1/cmr/m/n/10 dis-tri-bu-tion, i.e $\OML/cmm/m/it/10 s[] \OMS/cmsy/m/n/10  L
 \OT1/cmr/m/n/10 (0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1)$. The Laplace dis-tri-b
@@ -894,48 +967,46 @@ u-tion $\OMS/cmsy/m/n/10 L\OT1/cmr/m/n/10 (0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10
 n/10 ) = [] [] []$.
  []
 
-) (ica/02-laplace-sol.tex) (ica/03-cocktail.tex [16
-
-]) (ica/03-cocktail-sol.tex)) [17] (ps3-sol.aux) ) 
+) (ica/02-laplace-sol.tex) (ica/03-cocktail.tex) (ica/03-cocktail-sol.tex
+[23])) [24] (ps3-sol.aux) ) 
 Here is how much of TeX's memory you used:
- 17985 strings out of 480934
- 343206 string characters out of 2899918
+ 18040 strings out of 480934
+ 345545 string characters out of 2899918
  560109 words of memory out of 3000000
- 33358 multiletter control sequences out of 15000+200000
+ 33403 multiletter control sequences out of 15000+200000
  542410 words of font info for 63 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 65i,13n,64p,869b,577s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\benja\AppData\Loca
-l\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/benja/App
-Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Us
-ers/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx
-12.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmex10.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmmi10.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 
-2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/benja/AppData/Local/Prog
-rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/benja/AppDat
-a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/
-benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pf
+ 65i,13n,64p,869b,591s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\benja\AppData\Local\MiKTeX\2.9\fonts/pk/l
+jfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/benja/AppData/Local/Programs/MiK
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/benja/AppData/Local
+/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/benja/
+AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:
+/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
+mmi10.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmmi5.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmmi7.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX
+ 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/benja/AppData/Local/Pro
+grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/benja/AppDa
+ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users
+/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pf
 b><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmr17.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmr5.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/font
-s/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/benja/AppData/Local/Programs/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/benja/AppData/Local/Pr
-ograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/benja/AppDa
-ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/User
-s/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10
-.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfo
-nts/cm/cmss8.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmsy10.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9
-/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/benja/AppData/Local/Program
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/benja/AppData/
-Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/b
-enja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt8.pfb
-><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
-symbols/msbm10.pfb>
-Output written on ps3-sol.pdf (17 pages, 871498 bytes).
+/cm/cmr6.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmr7.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/benja/AppData/Local/Programs/MiKTe
+X 2.9/fonts/type1/public/amsfonts/cm/cmsl10.pfb><C:/Users/benja/AppData/Local/P
+rograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss10.pfb><C:/Users/benja/Ap
+pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Us
+ers/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy
+10.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmsy7.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmti10.pfb><C:/Users/benja/AppData/Local/Programs/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Users/benja/AppData/Local/Prog
+rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt8.pfb><C:/Users/benja/AppDat
+a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on ps3-sol.pdf (24 pages, 2336807 bytes).
 PDF statistics:
- 165 PDF objects out of 1000 (max. 8388607)
+ 595 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 28 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 73 words of extra memory for PDF output out of 10000 (max. 10000000)
 
