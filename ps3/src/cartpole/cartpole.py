@@ -2,7 +2,10 @@
 CS 229 Machine Learning
 Question: Reinforcement Learning - The Inverted Pendulum
 """
+
 from __future__ import division, print_function
+import matplotlib
+matplotlib.use('TkAgg')
 from env import CartPole, Physics
 import matplotlib.pyplot as plt
 import numpy as np
@@ -99,12 +102,12 @@ def initialize_mdp_data(num_states):
 
     Returns: The initial MDP parameters
     """
-    transition_counts = np.zeros((num_states, num_states, 2))
-    transition_probs = np.ones((num_states, num_states, 2)) / num_states
+    transition_counts = np.zeros((num_states, num_states, 2)) # P_ijk = P_{s_i, a_k} (s_j) i.e. s_i -> s_j under a_k
+    transition_probs = np.ones((num_states, num_states, 2)) / num_states # initial uniform distribution
     #Index zero is count of rewards being -1 , index 1 is count of total num state is reached
     reward_counts = np.zeros((num_states, 2)) 
     reward = np.zeros(num_states)
-    value = np.random.rand(num_states) * 0.1
+    value = np.random.rand(num_states) * 0.1 # - 0.05 - 1/num_states
 
     return {
         'transition_counts': transition_counts,
@@ -113,6 +116,7 @@ def initialize_mdp_data(num_states):
         'reward': reward,
         'value': value,
         'num_states': num_states,
+        'state_action_history': [[]]
     }
 
 def choose_action(state, mdp_data):
@@ -129,6 +133,15 @@ def choose_action(state, mdp_data):
     """
 
     # *** START CODE HERE ***
+    # argmax over actions a of sum_s' P_sa(s') V(s')
+    # s, s', a axes. times in axis s', sum over it, argmax over a and then take state s
+    expected_state_action_value = (mdp_data['transition_probs'] * mdp_data['value'].reshape(1, -1, 1)).sum(axis=1)
+    optimal = expected_state_action_value.argmax(axis=1)  # argmax over the 2 actions
+    is_optimal = expected_state_action_value[state][int(optimal[state])] > \
+                     expected_state_action_value[state][int(not optimal[state])]
+    action = optimal[state] if is_optimal else np.random.randint(2)
+    #print(f'state: {state}; optimal action: {action}; expected values: {expected_state_action_value[state]}')
+    return optimal[state] if expected_state_action_value[state][int(optimal[state])] > expected_state_action_value[state][int(not optimal[state])] else np.random.randint(2)
     # *** END CODE HERE ***
 
 def update_mdp_transition_counts_reward_counts(mdp_data, state, action, new_state, reward):
@@ -153,6 +166,13 @@ def update_mdp_transition_counts_reward_counts(mdp_data, state, action, new_stat
     """
 
     # *** START CODE HERE ***
+    mdp_data['state_action_history'][-1].append([state, action, new_state])
+    if reward == -1:
+        mdp_data['reward_counts'][new_state][0] += 1
+    mdp_data['reward_counts'][new_state][1] += 1  # the number of times reaching this state regardless of reward -1 or 0
+
+    mdp_data['transition_counts'][state, new_state, action] += 1
+
     # *** END CODE HERE ***
 
     # This function does not return anything
@@ -176,6 +196,23 @@ def update_mdp_transition_probs_reward(mdp_data):
     """
 
     # *** START CODE HERE ***
+    num_states = mdp_data['value'].shape[0]
+    transition_counts = mdp_data['transition_counts']
+    # i.e. some s' transition occured for s,a pair
+    state_actions_occurred = transition_counts.sum(axis=1) > 0
+    state_actions_occurred = np.tile(state_actions_occurred, (num_states, 1, 1)).transpose(1,0,2)
+    # where s,a pair occured take from counts, otherwise from the previous probs
+    transition_probs = np.where(state_actions_occurred, transition_counts, mdp_data['transition_probs'])
+    # counts at s' for s,a pair divided by total counts for s,a is our new prob - or same as old prob if no s,a
+    # pair occured
+    transition_probs = transition_probs/transition_probs.sum(axis=1).reshape(num_states, 1, 2)
+    mdp_data['transition_probs'] = transition_probs
+
+    # number of -1 rewards divided by total number of rewards (more general would be sum rewards / number times visited)
+    # rewards <-> new states, so did we ever reach this new state?
+    reward_occured = transition_counts.sum(axis=(0, 2)) > 0
+    reward = np.where(reward_occured, - mdp_data['reward_counts'][:, 0] / mdp_data['reward_counts'][:, 1], mdp_data['reward'])
+    mdp_data['reward'] = reward
     # *** END CODE HERE ***
 
     # This function does not return anything
@@ -203,7 +240,18 @@ def update_mdp_value(mdp_data, tolerance, gamma):
     """
 
     # *** START CODE HERE ***
+    action_values = (mdp_data['transition_probs'] * mdp_data['value'].reshape(1, -1, 1)).sum(axis=1)
+    old_value = mdp_data['value']
+    mdp_data['value'] = mdp_data['reward'] + gamma * action_values.max(axis=1)
+
+    max_diff = np.max(np.abs(mdp_data['value'] - old_value))
+    print(f'max state value diff: {max_diff}')
+    return max_diff < tolerance
     # *** END CODE HERE ***
+
+def plot_mdp_data(mdp_data):
+    plt.figure()
+    plt.plot(mdp_data['value'])
 
 def main(plot=True):
     # Seed the randomness of the simulation so this outputs the same thing each time
@@ -242,8 +290,8 @@ def main(plot=True):
     # `state` is the number given to this state, you only need to consider
     # this representation of the state
     state = cart_pole.get_state(state_tuple)
-    # if min_trial_length_to_start_display == 0 or display_started == 1:
-    #     cart_pole.show_cart(state_tuple, pause_time)
+    if min_trial_length_to_start_display == 0 or display_started == 1:
+        cart_pole.show_cart(state_tuple, pause_time)
 
     mdp_data = initialize_mdp_data(NUM_STATES)
 
@@ -253,6 +301,7 @@ def main(plot=True):
     # converged within one value function iteration. Intuitively, it seems
     # like there will be little learning after this, so end the simulation
     # here, and say the overall algorithm has converged.
+
 
     consecutive_no_learning_trials = 0
     while consecutive_no_learning_trials < NO_LEARNING_THRESHOLD:
@@ -268,8 +317,10 @@ def main(plot=True):
 
         # Get the state number corresponding to new state vector
         new_state = cart_pole.get_state(state_tuple)
-        # if display_started == 1:
-        #     cart_pole.show_cart(state_tuple, pause_time)
+        if display_started == 1:
+            cart_pole.show_cart(state_tuple, pause_time)
+
+        #print(f'state transition prob: {state}, {action} -> {new_state}: {mdp_data["transition_probs"][state, new_state, action]}')
 
         # reward function to use - do not change this!
         if new_state == NUM_STATES - 1:
@@ -277,6 +328,7 @@ def main(plot=True):
         else:
             R = 0
 
+        # add to transition count for s, s', a triple and to reward count for s'
         update_mdp_transition_counts_reward_counts(mdp_data, state, action, new_state, R)
 
         # Recompute MDP model whenever pole falls
@@ -299,7 +351,11 @@ def main(plot=True):
             if num_failures >= max_failures:
                 break
             print('[INFO] Failure number {}'.format(num_failures))
+            # plot_mdp_data(mdp_data)
             time_steps_to_failure.append(time - time_at_start_of_current_trial)
+            print(f'time to failure: {time_steps_to_failure[-1]}')
+            # print(f'history: {mdp_data["state_action_history"][-1]}')
+            mdp_data["state_action_history"].append([])
             # time_steps_to_failure[num_failures] = time - time_at_start_of_current_trial
             time_at_start_of_current_trial = time
 
@@ -316,6 +372,7 @@ def main(plot=True):
             state = new_state
 
     if plot:
+        plt.figure()
         # plot the learning curve (time balanced vs. trial)
         log_tstf = np.log(np.array(time_steps_to_failure))
         plt.plot(np.arange(len(time_steps_to_failure)), log_tstf, 'k')

@@ -1,0 +1,10 @@
+\begin{comment}
+After M-step $t-1$ we have $Q^{(t-1)}$ and $\theta^{(t)}$. Then E-step $t$ sets $Q^{(t)}_i = p(z_i | x_i; \theta^{(t)})$. This is $\text{argmax}_Q \; \text{ELBO}(Q, \theta^{(t)})$, which ensures that $l_{\text{unsup}}(\theta^{(t)}) = \sum_i \log p(x_i; \theta^{(t)}) = \text{ELBO}(Q^{(t)}, \theta)$. At the next M-step we then set $\theta^{(t+1)}$ via this big argmax over two terms - the first is the ELBO and the second is weighted $\alpha l_{\text{sup}}(\theta)$.
+
+i.e. a + b. -> a = a. argmax a + b
+
+$\tilde{a}$
+
+a(theta) + b(theta) and a~(Q, theta).
+Simplest way to think is that at any given theta, E-step we set lower bound a~ = a by choosing optimal Q. Then M-step we argmax over a~(theta) + b(theta)
+\end{comment}

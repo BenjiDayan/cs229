@@ -7,6 +7,12 @@ from math import sin, cos, pi
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 
+# Benji physics equations:
+# writing w = theta_dot,
+# centrifugal force:    F = m w^2 r
+# integrate from 0 to R F = 0.5 R^2 rho w^2 where rho is the density / length and R is length of stick
+
+
 class CartPole:
     def __init__(self, physics):
         self.physics = physics
@@ -139,9 +145,11 @@ class CartPole:
         x, x_dot, theta, theta_dot = state_tuple
         X = [x, x + 4*self.length * sin(theta)]
         Y = [0, 4*self.length * cos(theta)]
-        plt.close('all')
-        fig, ax = plt.subplots(1)
-        plt.ion()
+        # plt.close('all')
+        # fig, ax = plt.subplots(1)
+        plt.clf()
+        ax = plt.gca()
+        # plt.ion()
         ax.set_xlim(-3, 3)
         ax.set_ylim(-0.5, 3.5)
         ax.plot(X, Y)
