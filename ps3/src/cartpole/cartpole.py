@@ -255,7 +255,7 @@ def plot_mdp_data(mdp_data):
 
 def main(plot=True):
     # Seed the randomness of the simulation so this outputs the same thing each time
-    np.random.seed(0)
+    np.random.seed(3)
 
     # Simulation parameters
     pause_time = 0.0001
@@ -266,6 +266,7 @@ def main(plot=True):
     GAMMA = 0.995
     TOLERANCE = 0.01
     NO_LEARNING_THRESHOLD = 20
+    # TOTAL_MAX_TRIALS might be useful otherwise it takes up to 300 ish iterations to converge sometimes
 
     # Time cycle of the simulation
     time = 0
@@ -317,8 +318,8 @@ def main(plot=True):
 
         # Get the state number corresponding to new state vector
         new_state = cart_pole.get_state(state_tuple)
-        if display_started == 1:
-            cart_pole.show_cart(state_tuple, pause_time)
+        # if display_started == 1:
+        #     cart_pole.show_cart(state_tuple, pause_time)
 
         #print(f'state transition prob: {state}, {action} -> {new_state}: {mdp_data["transition_probs"][state, new_state, action]}')
 
@@ -383,7 +384,7 @@ def main(plot=True):
         plt.plot(x, weights[window:len(log_tstf)], 'r--')
         plt.xlabel('Num failures')
         plt.ylabel('Log of num steps to failure')
-        plt.savefig('./control.pdf')
+        plt.savefig('./control_seed3.pdf')
 
     return np.array(time_steps_to_failure)
     

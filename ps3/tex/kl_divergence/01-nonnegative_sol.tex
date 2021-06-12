@@ -1,2 +1,14 @@
+%\input{../macros.tex}
+%\begin{document}
 \begin{answer}
+\begin{align*}
+D_{KL}(P || Q)
+&= \sum_{x} P(x) \log \frac{P(x)}{Q(x)}\\
+&= E_{X \sim P} \left [ -\log \frac{Q(X)}{P(X)} \right ] \\
+\text{using Jensen's inequality with $f = -\log$,} \quad
+&\geq - \log E_{X \sim P} \left [ \frac{Q(X)}{P(X)} \right ]\\
+&= - \log \left( \sum_x Q(x) \right)\\
+\text{probability sums to 1 so} \quad &= 0
+\end{align*}
 \end{answer}
+%\end{document}

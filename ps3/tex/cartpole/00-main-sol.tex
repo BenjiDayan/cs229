@@ -1,2 +1,25 @@
+%\input{../macros.tex}
+%\begin{document}
 \begin{answer}
+We get our plot of falling times for seeds 0,1,2,3
+\begin{figure}[H]
+	\includegraphics[width=15cm,height=9cm,keepaspectratio]{../src/cartpole/control_seed0.pdf}
+	\caption{np.random.seed(0)}
+\end{figure}
+\begin{figure}[H]
+	\includegraphics[width=15cm,height=9cm,keepaspectratio]{../src/cartpole/control_seed1.pdf}
+	\caption{np.random.seed(1)}
+\end{figure}
+\begin{figure}[H]
+	\includegraphics[width=15cm,height=9cm,keepaspectratio]{../src/cartpole/control_seed2.pdf}
+	\caption{np.random.seed(2)}
+\end{figure}
+\begin{figure}[H]
+	\includegraphics[width=15cm,height=9cm,keepaspectratio]{../src/cartpole/control_seed3.pdf}
+	\caption{np.random.seed(3)}
+\end{figure}
+
+
+We have pretty different convergence behaviours for different random seeds. Max num trials survived is an order of magnitude different between e.g. seeds 1 and 2. Seed 1 had the best performance, although it took a while to converge fully (while maintaining that high performance) - I observed its value function difference spiking at multiple occasions which prevented the no learning threshold of 20 from triggering a few times.
 \end{answer}
+%\end{document}

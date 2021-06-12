@@ -1,2 +1,12 @@
+%\input{../macros.tex}
+%\begin{document}
 \begin{answer}
+\begin{align*}
+D_{KL}(P(X,Y) || Q(X,Y))
+&= \sum_{x,y} P(x,y) \log \frac{P(x,y)}{Q(x,y)}\\
+&= \sum_x P(x) \left[ \sum_y P(y|x) \log \frac{P(y|x) P(x)}{Q(y|x) Q(x)} \right ]\\
+&= \sum_x P(x) \left[ \log \frac{P(x)}{Q(x)} + \sum_y P(y|x) \log \frac{P(y|x)}{Q(y|x)} \right]\\
+&= D_{KL}(P(X) || Q(X)) + D_{KL}(P(Y|X) || Q(Y|X))
+\end{align*}
 \end{answer}
+%\end{document}

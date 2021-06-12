@@ -1,2 +1,15 @@
+%\input{../macros.tex}
+%\begin{document}
 \begin{answer}
+\begin{align*}
+\text{argmin}_\theta D_{KL} (\hat{P} || P_\theta)
+&= \sum_x \hat{P}(x) \log \frac{\hat{P}(x)}{P_\theta(x)}\\
+&= \text{argmax}_\theta \sum_x \hat{P}(x) \log P_\theta(x)\\
+&= \text{argmax}_\theta \sum_x \left[ \sum_{i=1}^n 1_{x^{(i)} = x} \log P_\theta(x) \right]\\
+&= \text{argmax}_\theta \sum_{i=1}^n \left[ \sum_x 1_{x^{(i)} = x} \log P_\theta(x) \right]\\
+\text{($x^{(i)} = x$ for precisely one $x \in \chi$)} \quad
+&= \text{argmax}_\theta \sum_{i=1}^n  \log P_\theta(x)\\
+&= MLE_\theta
+\end{align*}
 \end{answer}
+%\end{document}
